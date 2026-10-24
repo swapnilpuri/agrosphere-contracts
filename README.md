@@ -2,7 +2,7 @@
 
 AgroSphere API and event contracts, including Milestone 1A Estate Service.
 
-This is an independent project and Git root. Version: 0.3.0; use independent SemVer tags and CHANGELOG.md. License decision: LICENSE.md (all rights reserved pending selection).
+This is an independent project and Git root. Version: 0.3.1; use independent SemVer tags and CHANGELOG.md. License decision: LICENSE.md (all rights reserved pending selection).
 
 See AGENTS.md for scope and engineering rules. Estate Service now defines Milestone 1A business operations; Spatial Service defines Milestone 1B; other service APIs remain foundation placeholders. Architecture lives in the sibling agrosphere-architecture repository; versioned API/event definitions live in agrosphere-contracts. Do not add path dependencies to sibling projects.
 
@@ -27,3 +27,5 @@ Run python scripts/validate.py for v1/v2 examples, negative cases and all OpenAP
 Spatial REST now defines 22 operations, bounded GeoJSON, feature/layer revisions, JWT estate scope and Problem Details. Service release 0.2.0 pins this independent contract release. Five new schemas under events/spatial/v1 use eventVersion=1, sourceService=spatial-service and agrosphere.<EventType>.v1 routing. This namespace preserves every foundation events/v1 and estate events/v2 schema. Feature events carry identifiers and geometryVersion, with geometry retrieved through REST. Examples are SIMULATED. No remote release or push has been performed.
 
 The spatial projection consumes the existing estate v2 snapshots. No division lifecycle events exist in M1A; spatial can infer division membership from block snapshots, and must not claim authoritative division lifecycle. Expanding that contract requires a future coordinated release.
+
+Milestone 1C compatibility verification and unchanged-schema/transport rules are recorded in docs/COMPATIBILITY.md. Release 0.3.1 changes documentation only; service/platform snapshots remain pinned to schema release 0.3.0.

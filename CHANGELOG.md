@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 — 2026-10-24
+
+Document Milestone 1C API/event compatibility, canonical UUIDs, explicit version namespaces, parent-late reconciliation and outbox tracing headers. No API or event schemas changed; consumers retain pinned 0.3.0 artifacts.
+
 ## 0.3.0 — Milestone 1B
 
 Spatial REST operations and five spatial v1 domain events. Estate/block v2 and all foundation v1 schemas are preserved. No source dependency or remote release.

@@ -2,7 +2,7 @@
 
 Work only within this independent Git repository. No parent repository, submodules, shared persistence models, cross-service SQL or multi-service Maven parent.
 
-Current scope: Milestone 1A Estate REST/v2 events plus requested Milestone 1B Spatial REST/spatial v1 events. Preserve all existing estate and foundation schemas. Do not add AI, operational transactions or Milestone 1C contracts.
+Current scope: Estate/Spatial contracts through Milestone 1C compatibility verification. Preserve existing schema bytes and version namespaces; tracing metadata belongs to transport, not a silent event-envelope change.
 
 Use ports/adapters and service-owned migrations. APIs and events are designed in agrosphere-contracts; coordinate breaking changes through a versioned contract release, never a source path dependency. UUID estateId/blockId remain stable across clients. Mark data REAL, SIMULATED, ESTIMATED or PREDICTED. GeoJSON is WGS84 longitude/latitude (RFC 7946). Procedural trees are illustrative.
 
