@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/envelope.schema.json",
+  "title": "AgroSphere event envelope v1",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "eventVersion",
+    "timestamp",
+    "correlationId",
+    "source",
+    "estateId",
+    "dataProvenance",
+    "payload"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "eventVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "correlationId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "source": {
+      "type": "string"
+    },
+    "estateId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "blockId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "dataProvenance": {
+      "enum": [
+        "REAL",
+        "SIMULATED",
+        "ESTIMATED",
+        "PREDICTED"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}

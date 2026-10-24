@@ -1,0 +1,23 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000099",
+  "eventType": "EstateCreated",
+  "eventVersion": 2,
+  "occurredAt": "2026-01-01T00:00:00Z",
+  "correlationId": "00000000-0000-0000-0000-000000000001",
+  "sourceService": "estate-service",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "entityId": "00000000-0000-0000-0000-000000000001",
+  "dataProvenance": "SIMULATED",
+  "payload": {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "estateCode": "E1",
+    "name": "Synthetic estate",
+    "countryCode": "LK",
+    "timezone": "Asia/Colombo",
+    "totalAreaHectares": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "version": 0
+  }
+}

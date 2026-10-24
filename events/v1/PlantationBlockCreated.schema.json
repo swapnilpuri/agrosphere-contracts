@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/PlantationBlockCreated.schema.json",
+  "title": "PlantationBlockCreated",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "PlantationBlockCreated"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "estate-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "name",
+            "crop",
+            "areaHa"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "crop": {
+              "const": "RUBBER"
+            },
+            "areaHa": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

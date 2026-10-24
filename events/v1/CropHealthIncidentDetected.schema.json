@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/CropHealthIncidentDetected.schema.json",
+  "title": "CropHealthIncidentDetected",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "CropHealthIncidentDetected"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "operations-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "incidentId",
+            "observedAt",
+            "severity",
+            "summary"
+          ],
+          "properties": {
+            "incidentId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "observedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "severity": {
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH",
+                "CRITICAL"
+              ]
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,20 @@
+openapi: 3.1.0
+info:
+  title: AgroSphere analytics-service
+  version: 0.1.0
+  description: Milestone 0 contract placeholder; no business operations are approved yet.
+servers:
+  - url: https://api.agrosphere.invalid/api/v1/analytics
+paths: {}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    CanonicalId:
+      type: string
+      format: uuid
+security:
+  - bearerAuth: []

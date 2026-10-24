@@ -1,0 +1,12 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000803",
+  "eventType": "SpatialLayerCreated",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-24T00:00:00Z",
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "sourceService": "spatial-service",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "payload": {
+    "layerId": "00000000-0000-0000-0000-000000000600"
+  }
+}

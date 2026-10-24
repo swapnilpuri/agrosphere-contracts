@@ -1,0 +1,17 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000801",
+  "eventType": "SpatialFeatureUpdated",
+  "eventVersion": 1,
+  "occurredAt": "2026-10-24T00:00:00Z",
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "sourceService": "spatial-service",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "referenceEntityId": "00000000-0000-0000-0000-000000000003",
+  "geometryVersion": 1,
+  "payload": {
+    "featureId": "00000000-0000-0000-0000-000000000503",
+    "referenceEntityType": "BLOCK",
+    "status": "ACTIVE",
+    "dataProvenance": "SIMULATED"
+  }
+}

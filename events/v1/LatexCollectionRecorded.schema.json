@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/LatexCollectionRecorded.schema.json",
+  "title": "LatexCollectionRecorded",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "LatexCollectionRecorded"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "operations-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "collectionId",
+            "collectedAt",
+            "wetLatexKg",
+            "drcPercent"
+          ],
+          "properties": {
+            "collectionId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "collectedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "wetLatexKg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "drcPercent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

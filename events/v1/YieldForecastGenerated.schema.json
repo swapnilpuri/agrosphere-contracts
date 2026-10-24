@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/YieldForecastGenerated.schema.json",
+  "title": "YieldForecastGenerated",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "YieldForecastGenerated"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "ai-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "forecastId",
+            "periodStart",
+            "periodEnd",
+            "predictedDryRubberKg",
+            "modelVersion",
+            "evidenceIds"
+          ],
+          "properties": {
+            "forecastId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "periodStart": {
+              "type": "string",
+              "format": "date"
+            },
+            "periodEnd": {
+              "type": "string",
+              "format": "date"
+            },
+            "predictedDryRubberKg": {
+              "type": "number",
+              "minimum": 0
+            },
+            "modelVersion": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidenceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "dataProvenance": {
+          "const": "PREDICTED"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

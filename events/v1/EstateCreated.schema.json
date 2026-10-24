@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/EstateCreated.schema.json",
+  "title": "EstateCreated",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "eventType": {
+          "const": "EstateCreated"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "estate-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "companyId",
+            "name"
+          ],
+          "properties": {
+            "companyId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/PlantationBlockUpdated.schema.json",
+  "title": "PlantationBlockUpdated",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "PlantationBlockUpdated"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "estate-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "revision",
+            "changedFields"
+          ],
+          "properties": {
+            "revision": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "changedFields": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "name",
+                  "crop",
+                  "clone",
+                  "plantingYear",
+                  "areaHa"
+                ]
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

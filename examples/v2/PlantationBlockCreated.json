@@ -1,0 +1,29 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000099",
+  "eventType": "PlantationBlockCreated",
+  "eventVersion": 2,
+  "occurredAt": "2026-01-01T00:00:00Z",
+  "correlationId": "00000000-0000-0000-0000-000000000001",
+  "sourceService": "estate-service",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "entityId": "00000000-0000-0000-0000-000000000003",
+  "dataProvenance": "SIMULATED",
+  "blockId": "00000000-0000-0000-0000-000000000003",
+  "payload": {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "estateId": "00000000-0000-0000-0000-000000000001",
+    "divisionId": "00000000-0000-0000-0000-000000000002",
+    "blockCode": "B1",
+    "name": "Synthetic block",
+    "cropType": "RUBBER",
+    "rubberCloneCode": null,
+    "plantingDate": "2020-01-01",
+    "plantedAreaHectares": 2.5,
+    "plantedTreeCount": 100,
+    "tappableTreeCount": 70,
+    "status": "ACTIVE",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z",
+    "version": 0
+  }
+}

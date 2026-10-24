@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/TappingActivityRecorded.schema.json",
+  "title": "TappingActivityRecorded",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "TappingActivityRecorded"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "operations-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "activityId",
+            "tappedAt",
+            "tappedTreeCount"
+          ],
+          "properties": {
+            "activityId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "tappedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "tappedTreeCount": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

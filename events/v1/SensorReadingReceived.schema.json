@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.agrosphere.invalid/events/v1/SensorReadingReceived.schema.json",
+  "title": "SensorReadingReceived",
+  "allOf": [
+    {
+      "$ref": "envelope.schema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "blockId"
+      ],
+      "properties": {
+        "eventType": {
+          "const": "SensorReadingReceived"
+        },
+        "eventVersion": {
+          "const": 1
+        },
+        "source": {
+          "const": "telemetry-service"
+        },
+        "payload": {
+          "type": "object",
+          "required": [
+            "readingId",
+            "deviceId",
+            "observedAt",
+            "metric",
+            "value",
+            "unit"
+          ],
+          "properties": {
+            "readingId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "deviceId": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "observedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "metric": {
+              "enum": [
+                "soilMoisture",
+                "temperature",
+                "rainfall"
+              ]
+            },
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "enum": [
+                "percent",
+                "degC",
+                "mm"
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "metric": {
+                    "const": "soilMoisture"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "unit": {
+                    "const": "percent"
+                  },
+                  "value": {
+                    "minimum": 0,
+                    "maximum": 100
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "metric": {
+                    "const": "temperature"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "unit": {
+                    "const": "degC"
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "metric": {
+                    "const": "rainfall"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "unit": {
+                    "const": "mm"
+                  },
+                  "value": {
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}
