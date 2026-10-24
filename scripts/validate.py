@@ -71,3 +71,18 @@ for file in (ROOT / "events/spatial/v1").glob("*.schema.json"):
         assert not validator.is_valid(bad), key
     spatial_count += 1
 print(f"PASS: {spatial_count} spatial event schemas/examples and required-field negative cases")
+
+operations_count=0
+for file in (ROOT/'events/operations/v1').glob('*.schema.json'):
+    schema=json.loads(file.read_text())
+    Draft202012Validator.check_schema(schema)
+    validator=Draft202012Validator(schema,format_checker=FormatChecker())
+    event=json.loads((ROOT/'examples/operations/v1'/file.name.replace('.schema','')).read_text())
+    validator.validate(event)
+    for key in schema['required']:
+        bad=copy.deepcopy(event);del bad[key];assert not validator.is_valid(bad),key
+    for key,value in [('eventVersion',2),('source','wrong'),('unexpected',True)]:
+        bad=copy.deepcopy(event);bad[key]=value;assert not validator.is_valid(bad),key
+    operations_count+=1
+assert operations_count==6
+print(f'PASS: {operations_count} operations event schemas/examples and negative cases')

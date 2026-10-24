@@ -1,0 +1,47 @@
+{
+  "source": "agrosphere-operations-service",
+  "blockId": "dcd3388d-51e9-4cc8-b246-b2766ae08a01",
+  "eventId": "49db39c6-2df8-4085-ab70-c29ab340e95f",
+  "payload": {
+    "execution": {
+      "id": "8dc4f4ce-191a-4ae7-9e45-2e900a97642f",
+      "notes": "Done",
+      "blockId": "dcd3388d-51e9-4cc8-b246-b2766ae08a01",
+      "estateId": "5e7fe36e-3ab8-4f60-9a6d-b4ccb88ca3a6",
+      "workerId": "worker",
+      "createdAt": "2026-10-24T19:21:49.272847Z",
+      "createdBy": "worker",
+      "startedAt": "2026-10-24T19:21:49.272847Z",
+      "updatedAt": "2026-10-24T19:21:49.355270Z",
+      "completedAt": "2026-10-24T19:21:49.355270Z",
+      "tappingDate": "2026-10-25",
+      "assignmentId": "bae57aa9-d169-4c4e-8d12-2e119471e03d",
+      "actualTreeCount": 8,
+      "plannedTreeCount": 10
+    },
+    "assignment": {
+      "id": "bae57aa9-d169-4c4e-8d12-2e119471e03d",
+      "status": "COMPLETED",
+      "blockId": "dcd3388d-51e9-4cc8-b246-b2766ae08a01",
+      "version": 2,
+      "estateId": "5e7fe36e-3ab8-4f60-9a6d-b4ccb88ca3a6",
+      "workerId": "worker",
+      "createdAt": "2026-10-24T19:21:49.103250Z",
+      "createdBy": "admin",
+      "updatedAt": "2026-10-24T19:21:49.355269800Z",
+      "updatedBy": "worker",
+      "scheduleId": "b83582ec-7f74-4fb7-9c5d-258ce6e183ea",
+      "tappingDate": "2026-10-25",
+      "plannedTreeCount": 10
+    },
+    "missedReason": null
+  },
+  "estateId": "5e7fe36e-3ab8-4f60-9a6d-b4ccb88ca3a6",
+  "eventType": "TappingCompleted",
+  "timestamp": "2026-10-24T19:21:49.360464100Z",
+  "aggregateId": "bae57aa9-d169-4c4e-8d12-2e119471e03d",
+  "eventVersion": 1,
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "dataProvenance": "SIMULATED",
+  "aggregateVersion": 2
+}

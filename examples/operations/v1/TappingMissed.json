@@ -1,0 +1,38 @@
+{
+  "source": "agrosphere-operations-service",
+  "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+  "eventId": "a1360329-cfb3-47bd-8fad-72880dea0a0d",
+  "payload": {
+    "execution": null,
+    "assignment": {
+      "id": "da8a1d3e-8c8f-42f1-b070-b3b1e9f067f8",
+      "status": "MISSED",
+      "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+      "version": 1,
+      "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+      "workerId": "missed",
+      "createdAt": "2026-10-24T19:24:05.457097Z",
+      "createdBy": "admin",
+      "updatedAt": "2026-10-24T19:24:05.498560400Z",
+      "updatedBy": "missed",
+      "scheduleId": null,
+      "tappingDate": "2026-10-25",
+      "plannedTreeCount": 10
+    },
+    "missedReason": {
+      "remarks": "Rain",
+      "reasonCode": "RAIN",
+      "recordedAt": "2026-10-24T19:24:05.500119Z",
+      "recordedBy": "missed",
+      "assignmentId": "da8a1d3e-8c8f-42f1-b070-b3b1e9f067f8"
+    }
+  },
+  "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+  "eventType": "TappingMissed",
+  "timestamp": "2026-10-24T19:24:05.502755500Z",
+  "aggregateId": "da8a1d3e-8c8f-42f1-b070-b3b1e9f067f8",
+  "eventVersion": 1,
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "dataProvenance": "SIMULATED",
+  "aggregateVersion": 1
+}

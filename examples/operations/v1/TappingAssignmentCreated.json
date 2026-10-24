@@ -1,0 +1,32 @@
+{
+  "source": "agrosphere-operations-service",
+  "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+  "eventId": "16e8c78d-092a-4b52-9b92-d8ee51c7b7d3",
+  "payload": {
+    "execution": null,
+    "assignment": {
+      "id": "286921c1-14f5-4dbc-990c-f890d61abfae",
+      "status": "PLANNED",
+      "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+      "version": 0,
+      "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+      "workerId": "worker",
+      "createdAt": "2026-10-24T19:24:05.201130800Z",
+      "createdBy": "admin",
+      "updatedAt": "2026-10-24T19:24:05.201130800Z",
+      "updatedBy": "admin",
+      "scheduleId": "97b84db2-f89f-457c-af8f-17f8668b3953",
+      "tappingDate": "2026-10-25",
+      "plannedTreeCount": 10
+    },
+    "missedReason": null
+  },
+  "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+  "eventType": "TappingAssignmentCreated",
+  "timestamp": "2026-10-24T19:24:05.206428800Z",
+  "aggregateId": "286921c1-14f5-4dbc-990c-f890d61abfae",
+  "eventVersion": 1,
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "dataProvenance": "SIMULATED",
+  "aggregateVersion": 0
+}

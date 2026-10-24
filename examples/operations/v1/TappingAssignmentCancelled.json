@@ -1,0 +1,32 @@
+{
+  "source": "agrosphere-operations-service",
+  "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+  "eventId": "003647b9-866e-479f-bc59-1e5b0fe51ceb",
+  "payload": {
+    "execution": null,
+    "assignment": {
+      "id": "9e092bea-2a70-4166-ae31-c8a0f78bac8b",
+      "status": "CANCELLED",
+      "blockId": "8decc832-9b3f-4d29-a6f3-2acc1d0100fe",
+      "version": 2,
+      "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+      "workerId": "replacement",
+      "createdAt": "2026-10-24T19:24:05.545643Z",
+      "createdBy": "admin",
+      "updatedAt": "2026-10-24T19:24:05.595601200Z",
+      "updatedBy": "admin",
+      "scheduleId": null,
+      "tappingDate": "2026-10-26",
+      "plannedTreeCount": 10
+    },
+    "missedReason": null
+  },
+  "estateId": "78df0e14-dc67-424d-b3f4-f698356da3fc",
+  "eventType": "TappingAssignmentCancelled",
+  "timestamp": "2026-10-24T19:24:05.597702300Z",
+  "aggregateId": "9e092bea-2a70-4166-ae31-c8a0f78bac8b",
+  "eventVersion": 1,
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "dataProvenance": "SIMULATED",
+  "aggregateVersion": 2
+}

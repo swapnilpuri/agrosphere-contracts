@@ -1,0 +1,29 @@
+{
+  "source": "agrosphere-operations-service",
+  "blockId": "dcd3388d-51e9-4cc8-b246-b2766ae08a01",
+  "eventId": "95a7bd49-e48f-4da2-b4f9-f7b306340ae4",
+  "payload": {
+    "id": "b83582ec-7f74-4fb7-9c5d-258ce6e183ea",
+    "name": "Updated",
+    "status": "ACTIVE",
+    "blockId": "dcd3388d-51e9-4cc8-b246-b2766ae08a01",
+    "version": 2,
+    "estateId": "5e7fe36e-3ab8-4f60-9a6d-b4ccb88ca3a6",
+    "createdAt": "2026-10-24T19:21:48.928143Z",
+    "createdBy": "admin",
+    "updatedAt": "2026-10-24T19:21:49.065916Z",
+    "updatedBy": "admin",
+    "effectiveTo": "2026-10-27",
+    "effectiveFrom": "2026-10-25",
+    "recurrenceRule": "DAILY",
+    "plannedTreeCount": 10
+  },
+  "estateId": "5e7fe36e-3ab8-4f60-9a6d-b4ccb88ca3a6",
+  "eventType": "TappingScheduleActivated",
+  "timestamp": "2026-10-24T19:21:49.067944300Z",
+  "aggregateId": "b83582ec-7f74-4fb7-9c5d-258ce6e183ea",
+  "eventVersion": 1,
+  "correlationId": "00000000-0000-0000-0000-000000000099",
+  "dataProvenance": "SIMULATED",
+  "aggregateVersion": 2
+}

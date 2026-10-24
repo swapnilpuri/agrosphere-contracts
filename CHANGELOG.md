@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 — 2026-10-24
+
+Milestone 3A Operations OpenAPI and six operations/v1 event schemas/examples; existing event namespaces preserved.
+
 ## 0.3.1 — 2026-10-24
 
 Document Milestone 1C API/event compatibility, canonical UUIDs, explicit version namespaces, parent-late reconciliation and outbox tracing headers. No API or event schemas changed; consumers retain pinned 0.3.0 artifacts.
