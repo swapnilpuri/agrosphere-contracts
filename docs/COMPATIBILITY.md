@@ -11,3 +11,7 @@ Milestone 1C V3 service migrations persist W3C traceparent/tracestate beside the
 No division lifecycle event exists. Spatial may infer division membership from block snapshots but cannot claim authoritative division status. Child-first delivery retains block/reference IDs durably; later authoritative Estate snapshots reconcile the missing parent. Geometry mutation waits for a valid parent reference. Schema-invalid or conflicting events follow bounded retry/DLQ instead of silent deletion. See infrastructure docs/INTEGRATION_TESTING.md and the owning service README for operator-controlled replay.
 
 Validated with python scripts/validate.py, both services' actual runtime OpenAPI/event validators, and infrastructure's real Keycloak/two-division/ten-block GeoJSON workflow. Runtime API operation sets match pinned OpenAPI; all four Estate event types and spatial envelopes validate. No schema/route changes were needed for the integrated workflow. No remote release or push was performed.
+
+## Collection contract release 0.5.0
+
+Locally accepted by the owner on 2026-10-27. Adds nine collection operations under /api/v1/tapping/collections and four events/operations/v2 snapshot schemas using eventVersion=2. Foundation collection v1 and all tapping v1 bytes remain unchanged. No dual publication. Runtime producer copies use version-specific directories; no sibling runtime dependency is introduced. See milestone-3b/RELEASE_0_5_0.json for accepted artifact hashes and publication exclusions.

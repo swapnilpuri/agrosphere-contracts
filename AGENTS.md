@@ -9,3 +9,9 @@ Use ports/adapters and service-owned migrations. APIs and events are designed in
 Never commit credentials, local environment files, generated datasets or large geospatial assets. Use environment examples containing placeholders only. No remote creation, push or cloud deployment is authorized.
 
 Run repository checks documented in README.md. Report actual checks separately from unavailable checks. Version independently using SemVer and CHANGELOG.md; changes to 0.x contracts can still break consumers and require review.
+
+## Owner-authorized Milestone 3B candidate
+
+The 2026-10-27 owner approval authorizes T01 contract authoring, including nine additive Operations REST operations and four v2 collection event schemas. Preserve all old schemas/examples and existing API semantics. Candidate 0.5.0 is unreleased: independent contract review/release must precede Operations pinning; no VERSION bump, publication or remote mutation is authorized by authoring alone. Follow the Architecture approval/checkpoint.
+
+The owner accepted the executable candidate and authorized local release 0.5.0 metadata and Operations artifact pinning on 2026-10-27. RELEASE_0_5_0.json records the exact artifact hashes. The earlier unreleased restriction has been satisfied for local release/pinning only; no remote publication is authorized.

@@ -2,7 +2,7 @@
 
 AgroSphere API and event contracts, including Milestone 1A Estate Service.
 
-This is an independent project and Git root. Version: 0.3.1; use independent SemVer tags and CHANGELOG.md. License decision: LICENSE.md (all rights reserved pending selection).
+This is an independent project and Git root. Version: 0.5.0; use independent SemVer tags and CHANGELOG.md. License decision: LICENSE.md (all rights reserved pending selection).
 
 See AGENTS.md for scope and engineering rules. Estate Service now defines Milestone 1A business operations; Spatial Service defines Milestone 1B; other service APIs remain foundation placeholders. Architecture lives in the sibling agrosphere-architecture repository; versioned API/event definitions live in agrosphere-contracts. Do not add path dependencies to sibling projects.
 
@@ -29,3 +29,21 @@ Spatial REST now defines 22 operations, bounded GeoJSON, feature/layer revisions
 The spatial projection consumes the existing estate v2 snapshots. No division lifecycle events exist in M1A; spatial can infer division membership from block snapshots, and must not claim authoritative division lifecycle. Expanding that contract requires a future coordinated release.
 
 Milestone 1C compatibility verification and unchanged-schema/transport rules are recorded in docs/COMPATIBILITY.md. Release 0.3.1 changes documentation only; service/platform snapshots remain pinned to schema release 0.3.0.
+
+## Proposed Milestone 3B design (unreleased)
+
+[Collection REST/event design](docs/milestone-3b/API_EVENT_DESIGN.md) specifies nine additive Operations endpoints and a collection v2 event family. This is documentation for review only; runtime OpenAPI, schema bytes, examples, release version and service pins remain unchanged. Legacy LatexCollectionRecorded.v1 is preserved.
+
+## Milestone 3B design acceptance
+
+The owner accepted the [REST/event wire design](docs/milestone-3b/API_EVENT_DESIGN.md), including R01/R02, and authorized dependency-ordered implementation on 2026-10-27. See [approval scope](../agrosphere-architecture/docs/milestones/MILESTONE_3B_APPROVAL.md). Executable OpenAPI/schema authoring, validation, independent contract review and release remain outstanding. Existing published artifacts/VERSION are unchanged.
+
+## Milestone 3B executable candidate — review pending
+
+T01 now supplies nine additive REST operations (27 total), four self-contained collection v2 event schemas, SIMULATED pending/calculated/correction/void examples and seven persisted negative fixtures. This supersedes the earlier design-only description above. VERSION remains 0.4.0; candidate 0.5.0 has not been released or pinned. See [candidate review](docs/milestone-3b/CANDIDATE_REVIEW.md).
+
+Run python scripts/validate.py, python scripts/build_collection_contracts.py --check and python -m unittest discover -s scripts -p test_collection_contracts.py -v in the repository virtual environment. CI runs all three. Decimal checks use Decimal; artifacts contain no float/double formats. IANA zone/local-date behavior is verified in the owning Java domain, not approximated by Python offsets.
+
+## Local contract release 0.5.0
+
+The project owner accepted the exact executable candidate and authorized local release metadata and Operations artifact pinning on 2026-10-27. See [release acceptance](docs/milestone-3b/RELEASE_0_5_0.json). Earlier candidate/review-pending statements describe the pre-release state. No remote publication, tag, commit or push occurred.

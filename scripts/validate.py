@@ -86,3 +86,6 @@ for file in (ROOT/'events/operations/v1').glob('*.schema.json'):
     operations_count+=1
 assert operations_count==6
 print(f'PASS: {operations_count} operations event schemas/examples and negative cases')
+
+from collection_contract_validation import run as validate_collections
+validate_collections()

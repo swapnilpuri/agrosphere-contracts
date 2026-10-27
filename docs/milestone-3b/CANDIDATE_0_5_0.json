@@ -1,0 +1,57 @@
+{
+  "candidate": "0.5.0",
+  "status": "UNRELEASED; INDEPENDENT REVIEW PENDING",
+  "currentVersion": "0.4.0",
+  "date": "2026-10-27",
+  "timezone": "America/Chicago",
+  "files": {
+    "openapi/operations-service.yaml": "e242c507f3cb8aa9754b5731b2c5c32604a5ff961f11d49453e0ff2c1385498d",
+    "docs/milestone-3b/compatibility-baseline.json": "e0013a7a825f44c8905e3f023749c30767cfb5bf8c65ba2fcd1701275b5ab306",
+    "docs/milestone-3b/API_EVENT_DESIGN.md": "f7612e673499c311f3012007e6f4ee07e97efd693a9feb3c390836ef22328d5f",
+    "scripts/build_collection_contracts.py": "2e54911a6f08da557f61a886e0766f778d0b9ed813660cbba3dfd440a3e865bd",
+    "scripts/collection_contract_validation.py": "533d2396f15a15630792b2dc85a1c486f49318d090c68450f2fcdb3467e1a95b",
+    "scripts/test_collection_contracts.py": "a50631316c7c24a8e8a2760a917d59eb061d6757adef3de1731865c353077f14",
+    "scripts/validate.py": "457838797ba4deabc04af2dfd80dcf23277c18305e6e3c0f17db930d1667025d",
+    ".github/workflows/ci.yml": "7c50e691f21bd5c6716a722fec652c95e8f822ae505d60e89ff452adcd273d1d",
+    "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989",
+    "examples/operations/v2/DrcMeasurementRecorded.json": "c024cabadcc8e4461e81ef93b13d4f4e9cf5c8eee88e4fc587ba182d0abe8cf9",
+    "examples/operations/v2/edge/half-up.json": "6134394423a1509056b70343f493c2838fc94d3154bbd6875705b5a2aafed606",
+    "examples/operations/v2/edge/zero-drc.json": "1aace9471d27e24244b88cc797ca8bcc7ca029daf5ca1a499fa723e6003e204f",
+    "examples/operations/v2/LatexCollectionAdjusted.json": "c0a0fb8d4e6b397d7ce66c8826eca86a88ffeb37465ccd4955a5e5590391295e",
+    "examples/operations/v2/LatexCollectionRecorded.json": "ed7cf9e6995f7f2119d29a4fc3c80005c5ba1199cee1b275adb74c4ab2766b18",
+    "examples/operations/v2/LatexCollectionVoided.json": "011a6bb9741355d2fbb176c6e5a8b65c261e359476dc8e4ceeee3f11a15a9834",
+    "examples/operations/v2/negative/bad-uuid.json": "bf58e0452b80af9caf516c1500aeb3b09d2edd39674605b9723cd456e6d0cd09",
+    "examples/operations/v2/negative/lossy-timestamp.json": "80a415e04ccfe1b8fd7f1c04ac8c38d0ae3940e3104a16d884f44a2ae4771611",
+    "examples/operations/v2/negative/measurement-before-collection.json": "0d0b029aa4aeceb6caa2b8dfbbfdb9c2facdc38f48c45562a8ec885fdfa00f9d",
+    "examples/operations/v2/negative/mixed-provenance.json": "f8e83d72b134be5393887422cc08bee4b2a68489d71993032d1876609290d254",
+    "examples/operations/v2/negative/wrong-envelope-identity.json": "7f61a384ecf895783d5af731adeeb54965c5102fa07530dd5f173ccb1756ef71",
+    "examples/operations/v2/negative/wrong-formula.json": "fea4d436602b164f480c369c42350b229dfedb43afc010743f0f3398726b5705",
+    "examples/operations/v2/negative/wrong-version.json": "1a27ebbd7a35c7e037d4bbe56097d2e3fbb18b2cbf37c560bf38a16c5010fefe",
+    "examples/operations/v2/requests.json": "6d5994f5a54ed536f7bb541bba949dc84d198b3f3be3d316c9418b18e47feea5"
+  },
+  "checks": {
+    "strictContractsValidator": "PASS",
+    "deterministicArtifactCheck": "PASS",
+    "boundaryTests": {
+      "tests": 12,
+      "failures": 0,
+      "errors": 0
+    },
+    "legacyFilesUnchanged": 47,
+    "operations": {
+      "legacy": 18,
+      "added": 9,
+      "total": 27
+    }
+  },
+  "excluded": [
+    "Runtime pinning before acceptance",
+    "Remote publication/tag/push",
+    "Production deployment",
+    "Secret-handling changes",
+    "AEO changes"
+  ]
+}

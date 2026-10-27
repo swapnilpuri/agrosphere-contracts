@@ -1,0 +1,34 @@
+{
+  "CollectionCreate": {
+    "tappingRecordId": "00000000-0000-0000-0000-000000000301",
+    "collectionReference": " lot-01 ",
+    "collectedAt": "2026-10-27T10:00:00.123456000+00:00",
+    "wetLatexKg": 125.5,
+    "weightEvidence": {
+      "method": "SCALE",
+      "sourceReference": "SIMULATED-WEIGH-01"
+    },
+    "dataProvenance": "SIMULATED"
+  },
+  "CollectionInitialDrcWrite": {
+    "version": 0,
+    "measurement": {
+      "drcPercent": 32.4,
+      "measuredAt": "2026-10-27T12:00:00Z",
+      "method": "FIELD_TEST",
+      "sourceReference": "SIMULATED-TEST-01",
+      "dataProvenance": "SIMULATED",
+      "sampleReference": null,
+      "instrumentReference": null
+    }
+  },
+  "CollectionCorrection": {
+    "version": 1,
+    "reason": "SIMULATED correction",
+    "wetLatexKg": 100
+  },
+  "CollectionVoid": {
+    "version": 2,
+    "reason": "SIMULATED void"
+  }
+}
