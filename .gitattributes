@@ -4,3 +4,10 @@
 *.jpg binary
 *.uasset binary
 *.umap binary
+
+# Preserve the exact bytes bound by the accepted 0.5.0 candidate/release hashes.
+openapi/operations-service.yaml -text whitespace=cr-at-eol
+events/operations/v2/*.schema.json -text whitespace=cr-at-eol
+examples/operations/v2/** -text whitespace=cr-at-eol
+docs/milestone-3b/compatibility-baseline.json -text whitespace=cr-at-eol
+docs/milestone-3b/CANDIDATE_0_5_0.json -text whitespace=cr-at-eol

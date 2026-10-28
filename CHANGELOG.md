@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased - 2026-10-28 Git artifact preservation
+
+Preserve exact accepted 0.5.0 candidate artifacts and candidate-manifest bytes through Git checkout. This corrects storage normalization without changing approved hashes, schemas, examples or local release metadata; no new release or publication.
+
 ## 0.5.0 - 2026-10-27 (local release)
 
 Owner-accepted collection contracts: nine additive REST operations, four v2 snapshot events, positive/negative fixtures and deterministic offline validation. Preserves all 47 legacy event/example files and 18 tapping operations. Local metadata/pinning authorized; no remote publication/tag/commit/push. Exact reviewed hashes retained in docs/milestone-3b/RELEASE_0_5_0.json.
