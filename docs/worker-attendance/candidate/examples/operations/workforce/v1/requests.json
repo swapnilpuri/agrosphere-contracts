@@ -1,0 +1,39 @@
+{
+  "WorkerRegister": {
+    "estateId": "00000000-0000-0000-0000-000000000001",
+    "workerCode": " simulated-01 ",
+    "displayName": "SIMULATED — Example Worker",
+    "activeFrom": "2026-10-29",
+    "dataProvenance": "SIMULATED"
+  },
+  "WorkerUpdate": {
+    "version": 0,
+    "reason": "SIMULATED profile correction",
+    "displayName": "SIMULATED — Revised Example"
+  },
+  "WorkerClosePeriod": {
+    "version": 1,
+    "activePeriodId": "00000000-0000-0000-0000-000000000003",
+    "activeTo": "2026-10-30",
+    "reason": "SIMULATED registration closure"
+  },
+  "WorkerOpenPeriod": {
+    "version": 2,
+    "activeFrom": "2026-10-30",
+    "reason": "SIMULATED reactivation"
+  },
+  "AttendanceRecord": {
+    "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+    "attendanceDate": "2026-10-29",
+    "status": "PRESENT"
+  },
+  "AttendanceChange": {
+    "version": 0,
+    "status": "EXCUSED",
+    "reason": "SIMULATED roll-call correction"
+  },
+  "AttendanceVoid": {
+    "version": 1,
+    "reason": "SIMULATED mistaken entry"
+  }
+}

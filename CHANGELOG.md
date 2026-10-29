@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — 2026-10-29 WA-1
+
+Added isolated WA-1 executable candidate (15 additive REST operations, four minimal event schemas), deterministic builder, compatibility/negative checks and 12 tests. All 71 released artifact bytes, VERSION 0.5.0 and producer pins remain unchanged pending independent executable acceptance/local release.
+
 ## Unreleased - 2026-10-28 Git artifact preservation
 
 Preserve exact accepted 0.5.0 candidate artifacts and candidate-manifest bytes through Git checkout. This corrects storage normalization without changing approved hashes, schemas, examples or local release metadata; no new release or publication.

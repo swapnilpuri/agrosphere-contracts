@@ -15,3 +15,7 @@ Run repository checks documented in README.md. Report actual checks separately f
 The 2026-10-27 owner approval authorizes T01 contract authoring, including nine additive Operations REST operations and four v2 collection event schemas. Preserve all old schemas/examples and existing API semantics. Candidate 0.5.0 is unreleased: independent contract review/release must precede Operations pinning; no VERSION bump, publication or remote mutation is authorized by authoring alone. Follow the Architecture approval/checkpoint.
 
 The owner accepted the executable candidate and authorized local release 0.5.0 metadata and Operations artifact pinning on 2026-10-27. RELEASE_0_5_0.json records the exact artifact hashes. The earlier unreleased restriction has been satisfied for local release/pinning only; no remote publication is authorized.
+
+## Owner-approved WA-1 authoring — 2026-10-29
+
+The owner accepted the worker/attendance design and authorized dependency-ordered WA-T01–T09; see Architecture docs/milestones/WORKER_ATTENDANCE_APPROVAL.md. Author/test the fifteen additive REST operations and four minimal workforce events as an isolated executable candidate. Preserve released artifacts/VERSION and producer pins until exact candidate acceptance and independent local release are recorded. No remote publication or REAL worker data; no names/codes/reasons in shared events. See docs/worker-attendance/CANDIDATE_REVIEW.md for the new gate, not repeated 3B approval.

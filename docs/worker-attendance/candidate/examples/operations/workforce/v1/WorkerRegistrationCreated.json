@@ -1,0 +1,28 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000100",
+  "eventType": "WorkerRegistrationCreated",
+  "eventVersion": 1,
+  "timestamp": "2026-10-29T12:00:00Z",
+  "source": "agrosphere-operations-service",
+  "correlationId": "00000000-0000-0000-0000-000000000200",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "dataProvenance": "SIMULATED",
+  "aggregateId": "00000000-0000-0000-0000-000000000002",
+  "aggregateVersion": 0,
+  "payload": {
+    "snapshot": {
+      "registrationId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "version": 0,
+      "divisionId": null,
+      "activePeriods": [
+        {
+          "id": "00000000-0000-0000-0000-000000000003",
+          "activeFrom": "2026-10-29",
+          "activeTo": null
+        }
+      ]
+    }
+  }
+}

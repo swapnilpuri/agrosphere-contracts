@@ -1,0 +1,27 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000102",
+  "eventType": "WorkerAttendanceRecorded",
+  "eventVersion": 1,
+  "timestamp": "2026-10-29T12:00:00Z",
+  "source": "agrosphere-operations-service",
+  "correlationId": "00000000-0000-0000-0000-000000000200",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "dataProvenance": "SIMULATED",
+  "aggregateId": "00000000-0000-0000-0000-000000000004",
+  "aggregateVersion": 0,
+  "payload": {
+    "snapshot": {
+      "attendanceId": "00000000-0000-0000-0000-000000000004",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "version": 0,
+      "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+      "attendanceDate": "2026-10-29",
+      "estateTimezone": "Africa/Libreville",
+      "divisionIdSnapshot": null,
+      "activePeriodId": "00000000-0000-0000-0000-000000000003",
+      "workerVersionSnapshot": 0,
+      "status": "PRESENT"
+    }
+  }
+}

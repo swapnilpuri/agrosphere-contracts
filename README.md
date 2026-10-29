@@ -47,3 +47,7 @@ Run python scripts/validate.py, python scripts/build_collection_contracts.py --c
 ## Local contract release 0.5.0
 
 The project owner accepted the exact executable candidate and authorized local release metadata and Operations artifact pinning on 2026-10-27. See [release acceptance](docs/milestone-3b/RELEASE_0_5_0.json). Earlier candidate/review-pending statements describe the pre-release state. No remote publication, tag, commit or push occurred.
+
+## WA-1 isolated executable candidate
+
+The owner accepted worker/attendance design on 2026-10-29. See [candidate review](docs/worker-attendance/CANDIDATE_REVIEW.md) for fifteen additive REST operations, four minimal workforce events, exact hashes and retained independent release/pinning gate. Current release files/VERSION remain 0.5.0. Candidate artifacts are isolated under docs/worker-attendance/candidate; validate with `python scripts/build_workforce_contracts.py --check` and `python -m unittest discover -s scripts -p test_workforce_contracts.py -v` in addition to existing checks. This candidate does not enable runtime routes or REAL worker collection.

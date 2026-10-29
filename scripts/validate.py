@@ -89,3 +89,6 @@ print(f'PASS: {operations_count} operations event schemas/examples and negative 
 
 from collection_contract_validation import run as validate_collections
 validate_collections()
+
+from workforce_contract_validation import run as validate_workforce
+validate_workforce()
