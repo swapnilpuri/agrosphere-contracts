@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 — local, unpublished — 2026-10-29 WA-1
+
+Promote the exact owner-accepted WA-1 candidate as local 0.6.0: fifteen additive operations and four minimal event families. Archive prior 0.5.0 OpenAPI and retain all old event bytes. No remote publication.
+
 ## Unreleased — 2026-10-29 WA-1
 
 Added isolated WA-1 executable candidate (15 additive REST operations, four minimal event schemas), deterministic builder, compatibility/negative checks and 12 tests. All 71 released artifact bytes, VERSION 0.5.0 and producer pins remain unchanged pending independent executable acceptance/local release.

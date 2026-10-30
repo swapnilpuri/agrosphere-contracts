@@ -18,4 +18,6 @@ The owner accepted the executable candidate and authorized local release 0.5.0 m
 
 ## Owner-approved WA-1 authoring — 2026-10-29
 
+The subsequent explicit executable-candidate approval authorizes exact local 0.6.0 promotion/pinning. See docs/worker-attendance/RELEASE_0_6_0.json and Architecture WORKER_ATTENDANCE_CONTRACT_APPROVAL.md. This satisfies the historical pending gate below for these eleven artifacts only. Preserve candidate/manifest bytes, prior 0.5.0 archive and old event bytes. No publication/remote mutation is authorized.
+
 The owner accepted the worker/attendance design and authorized dependency-ordered WA-T01–T09; see Architecture docs/milestones/WORKER_ATTENDANCE_APPROVAL.md. Author/test the fifteen additive REST operations and four minimal workforce events as an isolated executable candidate. Preserve released artifacts/VERSION and producer pins until exact candidate acceptance and independent local release are recorded. No remote publication or REAL worker data; no names/codes/reasons in shared events. See docs/worker-attendance/CANDIDATE_REVIEW.md for the new gate, not repeated 3B approval.

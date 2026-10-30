@@ -82,7 +82,12 @@ def check_compatibility():
         require(api["components"]["schemas"][name] == value, f"Legacy API schema changed: {name}")
     require(api["components"]["securitySchemes"] == baseline["operationsComponents"]["securitySchemes"], "Legacy security schemes changed")
     require({k:v for k,v in api.items() if k not in ["paths", "components"]} == baseline["operationsTopLevel"], "Legacy OpenAPI metadata changed")
-    require(sum(len(v) for v in api["paths"].values()) == 27, "Expected 18 old plus 9 collection operations")
+    promoted = (ROOT / 'docs/worker-attendance/RELEASE_0_6_0.json').exists()
+    require(sum(len(v) for v in api["paths"].values()) == (42 if promoted else 27), "Unexpected operation set")
+    if promoted:
+        prior = load(ROOT / 'docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml')
+        for path, body in prior['paths'].items():
+            require(api['paths'].get(path) == body, 'Prior 27-operation semantics changed: '+path)
     return api
 
 

@@ -1,5 +1,9 @@
 # agrosphere-contracts
 
+## WA-1 local status — 2026-10-29
+
+The owner accepted the exact eleven WA-1 executable artifacts for local Contracts 0.6.0 promotion/pinning on 2026-10-29. See docs/worker-attendance/RELEASE_0_6_0.json. Candidate/manifest bytes remain intact; earlier pending candidate labels are historical. Prior 0.5.0 OpenAPI is archived for byte verification. Approved info.version remains 0.2.0; repository release metadata records 0.6.0. No remote release was published.
+
 AgroSphere API and event contracts, including Milestone 1A Estate Service.
 
 This is an independent project and Git root. Version: 0.5.0; use independent SemVer tags and CHANGELOG.md. License decision: LICENSE.md (all rights reserved pending selection).

@@ -1,0 +1,284 @@
+[
+  {
+    "case": "mismatched-aggregateId",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000102",
+      "eventType": "WorkerAttendanceRecorded",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000009999",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "attendanceId": "00000000-0000-0000-0000-000000000004",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+          "attendanceDate": "2026-10-29",
+          "estateTimezone": "Africa/Libreville",
+          "divisionIdSnapshot": null,
+          "activePeriodId": "00000000-0000-0000-0000-000000000003",
+          "workerVersionSnapshot": 0,
+          "status": "PRESENT"
+        }
+      }
+    }
+  },
+  {
+    "case": "mismatched-aggregateVersion",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000102",
+      "eventType": "WorkerAttendanceRecorded",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000004",
+      "aggregateVersion": 7,
+      "payload": {
+        "snapshot": {
+          "attendanceId": "00000000-0000-0000-0000-000000000004",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+          "attendanceDate": "2026-10-29",
+          "estateTimezone": "Africa/Libreville",
+          "divisionIdSnapshot": null,
+          "activePeriodId": "00000000-0000-0000-0000-000000000003",
+          "workerVersionSnapshot": 0,
+          "status": "PRESENT"
+        }
+      }
+    }
+  },
+  {
+    "case": "mismatched-dataProvenance",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000102",
+      "eventType": "WorkerAttendanceRecorded",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "REAL",
+      "aggregateId": "00000000-0000-0000-0000-000000000004",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "attendanceId": "00000000-0000-0000-0000-000000000004",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+          "attendanceDate": "2026-10-29",
+          "estateTimezone": "Africa/Libreville",
+          "divisionIdSnapshot": null,
+          "activePeriodId": "00000000-0000-0000-0000-000000000003",
+          "workerVersionSnapshot": 0,
+          "status": "PRESENT"
+        }
+      }
+    }
+  },
+  {
+    "case": "private-field-displayName",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000100",
+      "eventType": "WorkerRegistrationCreated",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000002",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "registrationId": "00000000-0000-0000-0000-000000000002",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "divisionId": null,
+          "activePeriods": [
+            {
+              "id": "00000000-0000-0000-0000-000000000003",
+              "activeFrom": "2026-10-29",
+              "activeTo": null
+            }
+          ],
+          "displayName": "SIMULATED forbidden disclosure"
+        }
+      }
+    }
+  },
+  {
+    "case": "private-field-workerCode",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000100",
+      "eventType": "WorkerRegistrationCreated",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000002",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "registrationId": "00000000-0000-0000-0000-000000000002",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "divisionId": null,
+          "activePeriods": [
+            {
+              "id": "00000000-0000-0000-0000-000000000003",
+              "activeFrom": "2026-10-29",
+              "activeTo": null
+            }
+          ],
+          "workerCode": "SIMULATED forbidden disclosure"
+        }
+      }
+    }
+  },
+  {
+    "case": "private-field-reason",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000100",
+      "eventType": "WorkerRegistrationCreated",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000002",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "registrationId": "00000000-0000-0000-0000-000000000002",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "divisionId": null,
+          "activePeriods": [
+            {
+              "id": "00000000-0000-0000-0000-000000000003",
+              "activeFrom": "2026-10-29",
+              "activeTo": null
+            }
+          ],
+          "reason": "SIMULATED forbidden disclosure"
+        }
+      }
+    }
+  },
+  {
+    "case": "private-field-recordedBy",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000100",
+      "eventType": "WorkerRegistrationCreated",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000002",
+      "aggregateVersion": 0,
+      "payload": {
+        "snapshot": {
+          "registrationId": "00000000-0000-0000-0000-000000000002",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 0,
+          "divisionId": null,
+          "activePeriods": [
+            {
+              "id": "00000000-0000-0000-0000-000000000003",
+              "activeFrom": "2026-10-29",
+              "activeTo": null
+            }
+          ],
+          "recordedBy": "SIMULATED forbidden disclosure"
+        }
+      }
+    }
+  },
+  {
+    "case": "nonadjacent-revision",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000103",
+      "eventType": "WorkerAttendanceChanged",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000004",
+      "aggregateVersion": 1,
+      "payload": {
+        "snapshot": {
+          "attendanceId": "00000000-0000-0000-0000-000000000004",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 1,
+          "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+          "attendanceDate": "2026-10-29",
+          "estateTimezone": "Africa/Libreville",
+          "divisionIdSnapshot": null,
+          "activePeriodId": "00000000-0000-0000-0000-000000000003",
+          "workerVersionSnapshot": 0,
+          "status": "VOIDED"
+        },
+        "previousVersion": 5,
+        "changeKind": "VOID"
+      }
+    }
+  },
+  {
+    "case": "correction-cannot-be-voided",
+    "event": {
+      "eventId": "00000000-0000-0000-0000-000000000103",
+      "eventType": "WorkerAttendanceChanged",
+      "eventVersion": 1,
+      "timestamp": "2026-10-29T12:00:00Z",
+      "source": "agrosphere-operations-service",
+      "correlationId": "00000000-0000-0000-0000-000000000200",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "dataProvenance": "SIMULATED",
+      "aggregateId": "00000000-0000-0000-0000-000000000004",
+      "aggregateVersion": 1,
+      "payload": {
+        "snapshot": {
+          "attendanceId": "00000000-0000-0000-0000-000000000004",
+          "estateId": "00000000-0000-0000-0000-000000000001",
+          "dataProvenance": "SIMULATED",
+          "version": 1,
+          "workerRegistrationId": "00000000-0000-0000-0000-000000000002",
+          "attendanceDate": "2026-10-29",
+          "estateTimezone": "Africa/Libreville",
+          "divisionIdSnapshot": null,
+          "activePeriodId": "00000000-0000-0000-0000-000000000003",
+          "workerVersionSnapshot": 0,
+          "status": "VOIDED"
+        },
+        "previousVersion": 0,
+        "changeKind": "CORRECT"
+      }
+    }
+  }
+]

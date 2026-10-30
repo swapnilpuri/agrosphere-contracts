@@ -49,10 +49,21 @@ def validate_event(event):
 
 def check_compatibility():
     baseline = load(ROOT / 'docs/worker-attendance/compatibility-baseline.json')
-    require(hashlib.sha256((ROOT / 'VERSION').read_bytes()).hexdigest() == baseline['versionSha256'], 'Released VERSION changed')
+    release_path = ROOT / 'docs/worker-attendance/RELEASE_0_6_0.json'
+    promoted = release_path.exists()
+    if promoted:
+        release = load(release_path)
+        require((ROOT / 'VERSION').read_text().strip() == '0.6.0', 'Released VERSION mismatch')
+        for name, expected in release['files'].items():
+            require(hashlib.sha256((ROOT/name).read_bytes()).hexdigest() == expected, 'Accepted release artifact changed: '+name)
+    else:
+        require(hashlib.sha256((ROOT / 'VERSION').read_bytes()).hexdigest() == baseline['versionSha256'], 'Released VERSION changed')
     for name, expected in baseline['files'].items():
-        require(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected, 'Released artifact changed: ' + name)
-    released = load(ROOT / 'openapi/operations-service.yaml')
+        path = ROOT / name
+        if promoted and name == 'openapi/operations-service.yaml':
+            path = ROOT / 'docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml'
+        require(hashlib.sha256(path.read_bytes()).hexdigest() == expected, 'Released artifact changed: ' + name)
+    released = load(ROOT / ('docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml' if promoted else 'openapi/operations-service.yaml'))
     candidate = load(CANDIDATE / 'openapi/operations-service.yaml')
     for path, body in released['paths'].items():
         require(candidate['paths'].get(path) == body, 'Old API path changed: ' + path)
