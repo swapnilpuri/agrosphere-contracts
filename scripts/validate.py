@@ -32,7 +32,9 @@ for schema in schemas:
     invalids.append(bad)
     assert all(not validator.is_valid(bad) for bad in invalids), schema["title"]
 for file in (ROOT / "openapi").glob("*.yaml"):
-    validate(yaml.safe_load(file.read_text()))
+    raw = file.read_text(encoding='utf-8')
+    # JSON is YAML 1.2; PyYAML's YAML 1.1 resolver misreads bare JSON exponents.
+    validate(json.loads(raw) if raw.lstrip().startswith('{') else yaml.safe_load(raw))
 v2_count = 0
 for file in (ROOT / "events/v2").glob("*.schema.json"):
     schema = json.loads(file.read_text(), parse_float=Decimal)
@@ -92,3 +94,12 @@ validate_collections()
 
 from workforce_contract_validation import run as validate_workforce
 validate_workforce()
+
+from crop_health_contract_validation import run as validate_crop_health
+validate_crop_health()
+
+from alert_contract_validation import run as validate_alerts
+validate_alerts()
+
+from alert_privacy_contract_validation import run as validate_alert_privacy
+validate_alert_privacy()

@@ -1,0 +1,61 @@
+{
+  "InspectionRecord": {
+    "estateId": "00000000-0000-0000-0000-000000000001",
+    "blockId": "00000000-0000-0000-0000-000000000002",
+    "dataProvenance": "SIMULATED",
+    "observedAt": "2026-10-31T11:00:00+01:00",
+    "findings": "SIMULATED inspection finding",
+    "outcome": "FOLLOW_UP",
+    "incident": {
+      "category": "TREE_DAMAGE",
+      "severity": "LOW",
+      "summary": "SIMULATED crop observation",
+      "details": "SIMULATED field evidence for contract testing"
+    }
+  },
+  "IncidentReport": {
+    "estateId": "00000000-0000-0000-0000-000000000001",
+    "blockId": "00000000-0000-0000-0000-000000000002",
+    "dataProvenance": "SIMULATED",
+    "observedAt": "2026-10-31T11:00:00+01:00",
+    "category": "TREE_DAMAGE",
+    "severity": "LOW",
+    "summary": "SIMULATED crop observation",
+    "details": "SIMULATED field evidence for contract testing"
+  },
+  "InspectionCorrect": {
+    "inspectionVersion": 0,
+    "incidentVersion": 1,
+    "reason": "SIMULATED correction",
+    "observedAt": "2026-10-31T11:00:00+01:00",
+    "findings": "SIMULATED inspection finding",
+    "outcome": "FOLLOW_UP"
+  },
+  "InspectionVoid": {
+    "inspectionVersion": 1,
+    "incidentVersion": 1,
+    "reason": "SIMULATED mistaken inspection"
+  },
+  "IncidentEdit": {
+    "expectedVersion": 0,
+    "inspectionVersion": 0,
+    "reason": "SIMULATED correction",
+    "observedAt": "2026-10-31T11:00:00+01:00",
+    "category": "TREE_DAMAGE",
+    "severity": "LOW",
+    "summary": "SIMULATED crop observation",
+    "details": "SIMULATED field evidence for contract testing"
+  },
+  "IncidentAction": {
+    "expectedVersion": 0,
+    "inspectionVersion": 0,
+    "reason": "SIMULATED manager action"
+  },
+  "IncidentResolve": {
+    "expectedVersion": 0,
+    "inspectionVersion": 0,
+    "reason": "SIMULATED closure",
+    "resolvedAt": "2026-10-31T12:00:00Z",
+    "resolutionNote": "SIMULATED resolution evidence"
+  }
+}

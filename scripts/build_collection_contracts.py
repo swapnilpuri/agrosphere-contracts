@@ -226,6 +226,9 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     api_path = ROOT / "openapi/operations-service.yaml"
+    if (ROOT/"docs/incident-inspection/RELEASE_0_7_0.json").exists():
+        if not args.check: raise RuntimeError("Released 0.7.0 bytes are immutable; author a new isolated candidate")
+        api_path = ROOT/"docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml"
     api = json.loads(api_path.read_text())
     add_operations(api)
     artifacts = {api_path: api}

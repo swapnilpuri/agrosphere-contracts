@@ -1,0 +1,22 @@
+{
+  "policyVersion": "AN_PRIVACY_PROVISIONAL_1",
+  "releaseProposal": "0.9.0",
+  "keyVersion": 7,
+  "newKeyClockSkewSeconds": 300,
+  "receiptMaximumSeconds": 2592000,
+  "personalReadInactiveSeconds": 2592000,
+  "ackAuditInactiveSeconds": 31536000,
+  "applicationLogSeconds": 1209600,
+  "securityLogSeconds": 7776000,
+  "backupMaximumSeconds": 3024000,
+  "livePhysicalCleanupMaximumDelaySeconds": 86400,
+  "expiryBoundary": "now >= deadline",
+  "retryDeadline": "min(key timestamp + 30d, original completion + 30d, applicable personal-copy deadline)",
+  "newKeyAdmission": "abs(key timestamp - server time) <= 300s; malformed/future-outside-window=400, absent old within30d=409, expired=410",
+  "permissionBeforeReplay": true,
+  "legacyFallback": false,
+  "offlineCommands": false,
+  "removalKeyCutoff": "verified request time + 300 seconds; deny new personal-copy commands while pending; reject keys at/before cutoff after reinstatement",
+  "legacyEnablementPrecondition": "all five V6 alert tables empty; nonempty requires separate reviewed data migration",
+  "restoreAccessPrecondition": "deadline enforcement, eligible cleanup and deletion-request reconciliation before access"
+}

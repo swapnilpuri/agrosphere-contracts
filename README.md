@@ -1,5 +1,9 @@
 # agrosphere-contracts
 
+## II-1 local release - 2026-10-31
+
+The owner accepted the exact eleven executable artifacts for local Contracts **0.7.0** release and Operations/Web pinning. See docs/incident-inspection/RELEASE_0_7_0.json and Architecture INCIDENT_INSPECTION_CONTRACT_APPROVAL.md. Candidate/manifest bytes, prior 0.6.0 API/VERSION archive and old events remain unchanged. Earlier pending labels are historical. No remote publication; REAL/privacy/workload gates remain open.
+
 ## WA-1 local status — 2026-10-29
 
 The owner accepted the exact eleven WA-1 executable artifacts for local Contracts 0.6.0 promotion/pinning on 2026-10-29. See docs/worker-attendance/RELEASE_0_6_0.json. Candidate/manifest bytes remain intact; earlier pending candidate labels are historical. Prior 0.5.0 OpenAPI is archived for byte verification. Approved info.version remains 0.2.0; repository release metadata records 0.6.0. No remote release was published.
@@ -55,3 +59,19 @@ The project owner accepted the exact executable candidate and authorized local r
 ## WA-1 isolated executable candidate
 
 The owner accepted worker/attendance design on 2026-10-29. See [candidate review](docs/worker-attendance/CANDIDATE_REVIEW.md) for fifteen additive REST operations, four minimal workforce events, exact hashes and retained independent release/pinning gate. Current release files/VERSION remain 0.5.0. Candidate artifacts are isolated under docs/worker-attendance/candidate; validate with `python scripts/build_workforce_contracts.py --check` and `python -m unittest discover -s scripts -p test_workforce_contracts.py -v` in addition to existing checks. This candidate does not enable runtime routes or REAL worker collection.
+
+## II-1 executable candidate — 2026-10-31
+
+Owner-approved design has an isolated [incident/inspection candidate](docs/incident-inspection/CANDIDATE_REVIEW.md): sixteen additive operations and four minimal event families. Current release remains 0.6.0; exact executable acceptance/local release/pinning is pending. Run `python scripts/build_crop_health_contracts.py --check` and `python -m unittest discover -s scripts -p test_crop_health_contracts.py -v`; the main validator and CI include the new candidate. Existing artifacts/pins remain unchanged.
+
+## AN-1 executable candidate — 2026-10-31
+
+Design approved; four isolated executable artifacts await independent review in [candidate review](docs/alerts-notifications/CANDIDATE_REVIEW.md). Six additive alert operations (64 candidate total), two closed writes, no new shared events. Released 0.7.0/VERSION and producer/Web pins unchanged. Run `python scripts/validate.py`, all four `build_*_contracts.py --check` builders, and `python -m unittest discover -s scripts -p "test_*contracts.py" -v`. No release/live rollout is implied.
+
+## AN-1 local release — 2026-10-31
+
+The owner accepted the exact four AN-1 executable artifacts for local Contracts 0.8.0 release and Operations/Web pins. See docs/alerts-notifications/RELEASE_0_8_0.json and Architecture ALERTS_NOTIFICATIONS_CONTRACT_APPROVAL.md. Earlier pending labels are historical; preserve candidate/manifest and prior0.7.0 archive bytes. No remote publication or live/REAL rollout.
+
+## Accepted privacy 0.9.0 local release — 2026-10-31
+
+Owner approval is recorded in Architecture ALERTS_PRIVACY_APPROVAL.md. See docs/alerts-privacy/RELEASE_0_9_0.json for exact promotion/pins and previous-0.8.0 for preserved bytes. Candidate/review pending labels are historical for this exact package. Existing validation now includes the privacy validator and all 59 contract tests; no remote release.

@@ -1,0 +1,19 @@
+{
+  "status": "UNRELEASED_REVIEW_CANDIDATE",
+  "proposedLocalRelease": "0.7.0",
+  "baseRelease": "0.6.0",
+  "approvedDesignSha256": "79944183a963bdddd4008557e2a8eb1e15acff739b612fb0d2e95d9d4f7da8e8",
+  "files": {
+    "docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentChanged.schema.json": "c1b8f700a64d4477ea1d25b27f1463a8082a83af5619dbf68c2efcfe3eeaade7",
+    "docs/incident-inspection/candidate/events/operations/crop-health/v1/CropHealthIncidentReported.schema.json": "57339d13e770fd4e54873ba2e19e31d6b91aba239042df2b604e3cd4311f26c3",
+    "docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionChanged.schema.json": "4276a0cead25cb490f4e21943056751929b3d3348cfa9c643140260b9f0798dd",
+    "docs/incident-inspection/candidate/events/operations/crop-health/v1/FieldInspectionRecorded.schema.json": "38ce1639ef2437238c256e26df5563dfd2b8549aaa639b60f39382007bc03c2c",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentChanged.json": "f9b0048531c9189f69b5c8f5c274b950daa255ff43b4e6c8891e95d9d8e198ae",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/CropHealthIncidentReported.json": "d21adcc8b839e0d06ce5fd6985ce8b4a604d5faa6e8831b2e06cab76845fc269",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionChanged.json": "c15f4d5d0b6ca06c5d3b546072b7ee3790711138d1a0ff5feb40ffe1c4d00e58",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/FieldInspectionRecorded.json": "482ca5858369e50e261e36c0d7cc8e9624e66b7a76a01944d25cfa58b3085630",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/negative.json": "bd05d28a2c724f79c8e6e878cc89b7f140f8da19029f5176cb654c037a785663",
+    "docs/incident-inspection/candidate/examples/operations/crop-health/v1/requests.json": "ab15157319a1c8fa66510d9a6a736b4461ce6547fc09184e53524ae520da773e",
+    "docs/incident-inspection/candidate/openapi/operations-service.yaml": "d93d54a038edfa9e9cdaeb6f089015571ae399855169b1fba4e26388215c8c67"
+  }
+}

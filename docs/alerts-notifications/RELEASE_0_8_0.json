@@ -1,0 +1,11 @@
+{
+  "release": "0.8.0",
+  "sourceManifestSha256": "d96a5885a60e4e16e2b6e196806d26c8e50a8b58d0243d06a8a6651962b3274c",
+  "files": {
+    "openapi/operations-service.yaml": "12daf94f17e8b4fded507c1f9a27a72deb7244c9a8b20013df131e748213e937",
+    "examples/operations/alerts/v1/requests.json": "0de7958a381051cf3c65ad6338fbb0833179ba249a69db9a9c2f662ad34089c7",
+    "examples/operations/alerts/v1/responses.json": "a66a17ad57ba767d113cf10ba892be977f17ced4659e70f1508b1d49b2b6864b",
+    "examples/operations/alerts/v1/negative.json": "4deffc3ea902c3e707cc68d324de1ae8f4d08161feb5d53aca90dff88a6fef58"
+  },
+  "scope": "Local exact AN-1 executable promotion; no remote publication"
+}

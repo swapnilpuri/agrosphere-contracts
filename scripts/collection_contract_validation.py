@@ -76,6 +76,11 @@ def check_compatibility():
     for name, expected in baseline["eventAndExampleHashes"].items():
         require(hashlib.sha256((ROOT/name).read_bytes()).hexdigest() == expected, f"Legacy file changed: {name}")
     api = load(ROOT / "openapi/operations-service.yaml")
+    if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists():
+        release=load(ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json')
+        require(hashlib.sha256((ROOT/'openapi/operations-service.yaml').read_bytes()).hexdigest()==release['files']['openapi/operations-service.yaml'],'Privacy release drift')
+        api=load(ROOT/'docs/alerts-privacy/previous-0.8.0/openapi/operations-service.yaml')
+        require(hashlib.sha256((ROOT/'docs/alerts-privacy/previous-0.8.0/openapi/operations-service.yaml').read_bytes()).hexdigest()=='12daf94f17e8b4fded507c1f9a27a72deb7244c9a8b20013df131e748213e937','Previous AN release drift')
     for name, value in baseline["operationsPaths"].items():
         require(api["paths"][name] == value, f"Legacy API path changed: {name}")
     for name, value in baseline["operationsComponents"]["schemas"].items():
@@ -83,7 +88,7 @@ def check_compatibility():
     require(api["components"]["securitySchemes"] == baseline["operationsComponents"]["securitySchemes"], "Legacy security schemes changed")
     require({k:v for k,v in api.items() if k not in ["paths", "components"]} == baseline["operationsTopLevel"], "Legacy OpenAPI metadata changed")
     promoted = (ROOT / 'docs/worker-attendance/RELEASE_0_6_0.json').exists()
-    require(sum(len(v) for v in api["paths"].values()) == (42 if promoted else 27), "Unexpected operation set")
+    require(sum(len(v) for v in api["paths"].values()) == (64 if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else 58 if (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists() else 42 if promoted else 27), "Unexpected operation set")
     if promoted:
         prior = load(ROOT / 'docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml')
         for path, body in prior['paths'].items():

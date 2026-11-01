@@ -118,7 +118,9 @@ OPERATIONS = [
 
 
 def api_candidate():
-    api = json.loads((ROOT / 'openapi/operations-service.yaml').read_text())
+    base_api = ROOT / 'docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml'
+    if not base_api.exists(): base_api = ROOT / 'openapi/operations-service.yaml'
+    api = json.loads(base_api.read_text())
     api['components']['schemas'].update(definitions())
     pages = [parameter('page', dict(type='integer', minimum=0, default=0)),
              parameter('size', dict(type='integer', minimum=1, maximum=100, default=20))]

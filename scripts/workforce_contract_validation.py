@@ -53,9 +53,12 @@ def check_compatibility():
     promoted = release_path.exists()
     if promoted:
         release = load(release_path)
-        require((ROOT / 'VERSION').read_text().strip() == '0.6.0', 'Released VERSION mismatch')
+        require((ROOT / 'VERSION').read_text().strip() == ('0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else '0.7.0' if (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists() else '0.6.0'), 'Released VERSION mismatch')
         for name, expected in release['files'].items():
-            require(hashlib.sha256((ROOT/name).read_bytes()).hexdigest() == expected, 'Accepted release artifact changed: '+name)
+            path = ROOT/name
+            if name == 'openapi/operations-service.yaml' and (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists():
+                path = ROOT/'docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml'
+            require(hashlib.sha256(path.read_bytes()).hexdigest() == expected, 'Accepted release artifact changed: '+name)
     else:
         require(hashlib.sha256((ROOT / 'VERSION').read_bytes()).hexdigest() == baseline['versionSha256'], 'Released VERSION changed')
     for name, expected in baseline['files'].items():

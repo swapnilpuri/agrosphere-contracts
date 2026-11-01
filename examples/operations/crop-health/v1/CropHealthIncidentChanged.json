@@ -1,0 +1,31 @@
+{
+  "eventId": "00000000-0000-0000-0000-000000000103",
+  "eventType": "CropHealthIncidentChanged",
+  "eventVersion": 1,
+  "timestamp": "2026-10-31T12:00:00Z",
+  "source": "agrosphere-operations-service",
+  "correlationId": "00000000-0000-0000-0000-000000000200",
+  "estateId": "00000000-0000-0000-0000-000000000001",
+  "blockId": "00000000-0000-0000-0000-000000000002",
+  "dataProvenance": "SIMULATED",
+  "aggregateId": "00000000-0000-0000-0000-000000000004",
+  "aggregateVersion": 1,
+  "payload": {
+    "snapshot": {
+      "id": "00000000-0000-0000-0000-000000000004",
+      "estateId": "00000000-0000-0000-0000-000000000001",
+      "blockId": "00000000-0000-0000-0000-000000000002",
+      "observedAt": "2026-10-31T10:00:00Z",
+      "estateTimezone": "Africa/Libreville",
+      "dataProvenance": "SIMULATED",
+      "version": 1,
+      "inspectionId": "00000000-0000-0000-0000-000000000003",
+      "category": "TREE_DAMAGE",
+      "severity": "LOW",
+      "status": "VOIDED",
+      "resolvedAt": null
+    },
+    "previousVersion": 0,
+    "changeKind": "VOID"
+  }
+}

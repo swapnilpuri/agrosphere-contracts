@@ -1,0 +1,9 @@
+{
+  "Read": {
+    "attentionVersion": 1
+  },
+  "Acknowledge": {
+    "expectedAlertVersion": 1,
+    "attentionVersion": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "UNRELEASED_REVIEW_CANDIDATE",
+  "baseRelease": "0.7.0",
+  "approvedDesignSha256": "22d8c98ede00c4e912f98922f944417aca54bc585a48efe7beb74f59d1364251",
+  "files": {
+    "docs/alerts-notifications/candidate/openapi/operations-service.yaml": "12daf94f17e8b4fded507c1f9a27a72deb7244c9a8b20013df131e748213e937",
+    "docs/alerts-notifications/candidate/examples/requests.json": "0de7958a381051cf3c65ad6338fbb0833179ba249a69db9a9c2f662ad34089c7",
+    "docs/alerts-notifications/candidate/examples/responses.json": "a66a17ad57ba767d113cf10ba892be977f17ced4659e70f1508b1d49b2b6864b",
+    "docs/alerts-notifications/candidate/examples/negative.json": "4deffc3ea902c3e707cc68d324de1ae8f4d08161feb5d53aca90dff88a6fef58"
+  }
+}

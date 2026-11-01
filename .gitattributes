@@ -18,3 +18,20 @@ examples/operations/workforce/v1/** -text whitespace=cr-at-eol
 docs/worker-attendance/candidate/** -text whitespace=cr-at-eol
 docs/worker-attendance/previous-0.5.0/** -text whitespace=cr-at-eol
 docs/worker-attendance/CANDIDATE_MANIFEST.json -text whitespace=cr-at-eol
+
+# Exact accepted II-1 artifacts and retained prior release bytes.
+events/operations/crop-health/v1/** -text
+examples/operations/crop-health/v1/** -text
+docs/incident-inspection/candidate/** -text
+docs/incident-inspection/previous-0.6.0/** -text
+docs/incident-inspection/CANDIDATE_MANIFEST.json -text
+
+# Isolated AN-1 exact candidate/compatibility bytes; no release is implied.
+docs/alerts-notifications/candidate/** -text whitespace=cr-at-eol
+docs/alerts-notifications/CANDIDATE_MANIFEST.json -text whitespace=cr-at-eol
+docs/alerts-notifications/compatibility-baseline.json -text whitespace=cr-at-eol
+
+docs/alerts-notifications/previous-0.7.0/** -text whitespace=cr-at-eol
+examples/operations/alerts/v1/** -text whitespace=cr-at-eol
+
+docs/alerts-privacy/previous-0.8.0/** -text whitespace=cr-at-eol

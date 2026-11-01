@@ -1,0 +1,14 @@
+{
+  "release": "0.9.0",
+  "sourceManifestSha256": "ea6402a205d1da7a0801090b0acabac58ae164ba6544b474d709d8a4a608286b",
+  "reviewer": "project owner",
+  "date": "2026-10-31",
+  "scope": "Local only; generated implementation; no existing-stack deployment",
+  "files": {
+    "openapi/operations-service.yaml": "f8a862a4f4d1cc397999fc5a47f763a23140eb7d72b38a4e2ec9c036315b71bc",
+    "examples/operations/alerts/v2/requests.json": "0de7958a381051cf3c65ad6338fbb0833179ba249a69db9a9c2f662ad34089c7",
+    "examples/operations/alerts/v2/responses.json": "11e24ba8bfabeaaa64839d562e9f33e668e26929eaada0e284c82d08f83989c7",
+    "examples/operations/alerts/v2/negative.json": "84ff1c8fdf81698127922cc64f40ccbc788317cc4e9ccad3517fb0b217970a5a",
+    "examples/operations/alerts/v2/semantics.json": "072d3fa0bbf80556b93cb085b0bd3d8326cae0d03927624a0e3b20eee734f4c4"
+  }
+}

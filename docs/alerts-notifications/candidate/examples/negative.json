@@ -1,0 +1,405 @@
+[
+  {
+    "case": "read-zero",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": 0
+    }
+  },
+  {
+    "case": "read-null",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": null
+    }
+  },
+  {
+    "case": "ack-missing-version",
+    "schema": "Acknowledge",
+    "value": {
+      "attentionVersion": 1
+    }
+  },
+  {
+    "case": "ack-fraction",
+    "schema": "Acknowledge",
+    "value": {
+      "expectedAlertVersion": 1.5,
+      "attentionVersion": 1
+    }
+  },
+  {
+    "case": "forbidden-subject",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": 1,
+      "subject": "forbidden"
+    }
+  },
+  {
+    "case": "forbidden-recipientId",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": 1,
+      "recipientId": "forbidden"
+    }
+  },
+  {
+    "case": "forbidden-dataProvenance",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": 1,
+      "dataProvenance": "forbidden"
+    }
+  },
+  {
+    "case": "forbidden-reason",
+    "schema": "Read",
+    "value": {
+      "attentionVersion": 1,
+      "reason": "forbidden"
+    }
+  },
+  {
+    "case": "real",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "REAL",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "private-text",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null,
+      "summary": "forbidden"
+    }
+  },
+  {
+    "case": "actor-leak",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null,
+      "acknowledgedBy": "forbidden"
+    }
+  },
+  {
+    "case": "false-unread",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": false,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "future-read",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 2,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "ack-without-time",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": true,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "active-low",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "LOW",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "active-resolved",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "RESOLVED",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "active-reason",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": "RESOLVED",
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "future-observation",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-11-01T00:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "excess-time-precision",
+    "schema": "AlertView",
+    "value": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "incidentId": "00000000-0000-0000-0000-000000000002",
+      "estateId": "00000000-0000-0000-0000-000000000003",
+      "blockId": "00000000-0000-0000-0000-000000000004",
+      "ruleVersion": "CROP_HEALTH_HIGH_V1",
+      "sourceVersion": 0,
+      "alertVersion": 1,
+      "attentionVersion": 1,
+      "state": "ACTIVE",
+      "inactiveReason": null,
+      "category": "TREE_DAMAGE",
+      "severity": "HIGH",
+      "incidentStatus": "OPEN",
+      "dataProvenance": "SIMULATED",
+      "estateTimezone": "Etc/UTC",
+      "observedAt": "2026-10-31T11:00:00Z",
+      "raisedAt": "2026-10-31T12:00:00Z",
+      "attentionAt": "2026-10-31T12:00:00Z",
+      "updatedAt": "2026-10-31T12:00:00.1234567Z",
+      "readAttentionVersion": 0,
+      "readAt": null,
+      "unreadForMe": true,
+      "acknowledged": false,
+      "acknowledgedAt": null
+    }
+  },
+  {
+    "case": "impossible-counts",
+    "schema": "Counts",
+    "value": {
+      "activeTotal": 0,
+      "activeUnreadForMe": 1,
+      "activeUnacknowledged": 1,
+      "generatedAt": "2026-10-31T12:00:00Z"
+    }
+  }
+]
