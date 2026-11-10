@@ -1,4 +1,5 @@
 """Offline schema/semantic/compatibility checks for isolated WA-1 candidates."""
+from telemetry_release_compatibility import prior_telemetry, telemetry_inventory
 import hashlib
 import json
 from datetime import date
@@ -53,19 +54,19 @@ def check_compatibility():
     promoted = release_path.exists()
     if promoted:
         release = load(release_path)
-        require((ROOT / 'VERSION').read_text().strip() == ('0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else '0.7.0' if (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists() else '0.6.0'), 'Released VERSION mismatch')
+        require((ROOT / 'VERSION').read_text().strip() == ('0.13.0' if (ROOT/'docs/m4/RELEASE_0_13_0.json').exists() else '0.12.0' if (ROOT/'docs/analytics-environment-poc/RELEASE_0_12_0.json').exists() else '0.11.0' if (ROOT/'docs/analytics-poc/RELEASE_0_11_0.json').exists() else '0.10.0' if (ROOT/'docs/telemetry-poc/RELEASE_0_10_0.json').exists() else '0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else '0.7.0' if (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists() else '0.6.0'), 'Released VERSION mismatch')
         for name, expected in release['files'].items():
             path = ROOT/name
             if name == 'openapi/operations-service.yaml' and (ROOT/'docs/incident-inspection/RELEASE_0_7_0.json').exists():
                 path = ROOT/'docs/incident-inspection/previous-0.6.0/openapi/operations-service.yaml'
-            require(hashlib.sha256(path.read_bytes()).hexdigest() == expected, 'Accepted release artifact changed: '+name)
+            require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest() == expected, 'Accepted release artifact changed: '+name)
     else:
         require(hashlib.sha256((ROOT / 'VERSION').read_bytes()).hexdigest() == baseline['versionSha256'], 'Released VERSION changed')
     for name, expected in baseline['files'].items():
         path = ROOT / name
         if promoted and name == 'openapi/operations-service.yaml':
             path = ROOT / 'docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml'
-        require(hashlib.sha256(path.read_bytes()).hexdigest() == expected, 'Released artifact changed: ' + name)
+        require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest() == expected, 'Released artifact changed: ' + name)
     released = load(ROOT / ('docs/worker-attendance/previous-0.5.0/openapi/operations-service.yaml' if promoted else 'openapi/operations-service.yaml'))
     candidate = load(CANDIDATE / 'openapi/operations-service.yaml')
     for path, body in released['paths'].items():

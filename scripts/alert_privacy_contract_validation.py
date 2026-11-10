@@ -90,7 +90,7 @@ def run():
         else: raise ValueError('Negative accepted: '+item['reason'])
     release=load(HOME/'RELEASE_0_9_0.json')
     require(release['sourceManifestSha256']==sha((HOME/'CANDIDATE_MANIFEST.json').read_bytes()),'Release manifest drift')
-    require((ROOT/'VERSION').read_text().strip()=='0.9.0','Local release version')
+    require((ROOT/'VERSION').read_text().strip()==('0.13.0' if (ROOT/'docs/m4/RELEASE_0_13_0.json').exists() else '0.12.0' if (ROOT/'docs/analytics-environment-poc/RELEASE_0_12_0.json').exists() else '0.11.0' if (ROOT/'docs/analytics-poc/RELEASE_0_11_0.json').exists() else '0.10.0' if (ROOT/'docs/telemetry-poc/RELEASE_0_10_0.json').exists() else '0.9.0'),'Local release version')
     for name,h in release['files'].items(): require(sha((ROOT/name).read_bytes())==h,'Release byte drift: '+name)
     print('PASS: five exact privacy artifacts, 70 operations, retained 58 non-alert operations/all old schemas, six v2 operations, bounded keys and expiry/redaction fixtures')
 

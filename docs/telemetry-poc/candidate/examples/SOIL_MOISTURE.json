@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "observationId": "00000000-0000-4000-8000-000000000002",
+  "deviceId": "00000000-0000-4000-8000-000000000004",
+  "estateId": "00000000-0000-4000-8000-000000000005",
+  "blockId": "00000000-0000-4000-8000-000000000006",
+  "kind": "SOIL_MOISTURE",
+  "unit": "PERCENT",
+  "value": "45",
+  "observedAt": "2026-01-01T12:00:00Z",
+  "dataProvenance": "SIMULATED"
+}

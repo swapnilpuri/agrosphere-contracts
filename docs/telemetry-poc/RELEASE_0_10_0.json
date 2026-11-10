@@ -1,0 +1,22 @@
+{
+  "release": "0.10.0",
+  "sourceManifestSha256": "174140bc1db129ab879d9e431e9065a6715746c31c70fa0ec2bb7992063f01b0",
+  "reviewSha256": "dccffe810bf4c7b52a69754a192d6351c8ebade453188a4b7c7d0025d99ae141",
+  "reviewer": "project owner",
+  "date": "2026-11-01",
+  "scope": "Local archive/promotion/release metadata and exact Telemetry pins only; no adapters or deployment",
+  "files": {
+    "events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+    "examples/telemetry/v1/AIR_TEMPERATURE.json": "8b7c9d69d0475845235f5ca4f7dbf0d87bcb5aeee241d019ef1484daa0fb8e99",
+    "examples/telemetry/v1/INTERVAL_RAINFALL.json": "c90a6dc7c6cece0b820c6aa3d27971848a4ebbcf8280ad13f877370334b2790e",
+    "examples/telemetry/v1/LatestReadings.json": "ec2a3af20fcea17c702b9a201d77633affc5ba80d54294179df7b96a96991ff6",
+    "examples/telemetry/v1/SOIL_MOISTURE.json": "8880bbd45b494b2d0eedbb19f65a651e674eeddb2f03fd2f7f5182feafd735a3",
+    "examples/telemetry/v1/TelemetryObservationRecorded.json": "bf30e8466dce6064ccc0d3fe00f6869fd534e399fd9fe3c74cd26f28106f97b9",
+    "mqtt/Observation.schema.json": "bf3a58d8e5929f367a95344fc7a34c4f548ad9c44fc833d7415dbe8e7b44b255",
+    "openapi/telemetry-service.yaml": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa"
+  },
+  "archive": {
+    "docs/telemetry-poc/previous-0.9.0/VERSION": "03627dfd7695e0e68ca0cb329b30582a35c49384d98227536edca14080eea08b",
+    "docs/telemetry-poc/previous-0.9.0/openapi/telemetry-service.yaml": "1bfc36028bd17709009e45ab1625da80307fdfb8d89a37b6487f8e7be3a9a829"
+  }
+}

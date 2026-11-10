@@ -1,0 +1,27 @@
+{
+  "revision": 1,
+  "ownerPackageSha256": "befbee78062c2fcef6af0ea394fcc81be3e7638053deca142f136c66bc7cc93d",
+  "candidate": {
+    "ai-service.openapi.json": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e"
+  },
+  "examples": {
+    "flagged.json": "83369cda4e3a0730fe93a9e981f43404e42c2343d902f5f2cb1d384262b4f69e",
+    "incomplete_source.json": "0785c63a596595c9fcbb863b9ec7b9f370e02cfb661f88d5ccbdd44ba5dce41e",
+    "insufficient_history.json": "d78818ebcef486327446148beedd84849bf33456f0064c20b00c188bf98bea25",
+    "no-label.json": "01169305213ac399125c0082cff0ef9b0a4ee5bd81497a71c682a840a828132d",
+    "observed-zero.json": "3989ac35b17d3e05d6011eff7d623c0555390c17aa77256131ba2cf4e67437c2",
+    "pending_drc.json": "d9bf972b38b78c207537c2e70b821bf116e3403e22a2546f68cb397992112a07",
+    "threshold-equality.json": "ff7265bd7572d7d0879a12a94bf63b3fa63038b78d8427be779f9b76f2c716fb",
+    "unscored-label.json": "e231dbe5f644588cc467adb96747b1e5905b5e9fe7b958e0c6a08ce0a342d530"
+  },
+  "unchangedInputs": {
+    "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+  },
+  "previous": {
+    "VERSION": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
+    "openapi/ai-service.yaml": "0bc93aa4c50c05c2df65228304f203b7b2c4b738ae6de66fac9560c6e3f66dc9"
+  }
+}

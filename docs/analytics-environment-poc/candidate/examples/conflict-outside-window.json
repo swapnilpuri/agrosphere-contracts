@@ -1,0 +1,21 @@
+{
+  "estateId": "00000000-0000-4000-8000-000000000001",
+  "blockId": "00000000-0000-4000-8000-000000000002",
+  "from": "2026-01-01T00:00:00Z",
+  "to": "2026-01-02T00:00:00Z",
+  "generatedAt": "2026-01-02T00:00:02Z",
+  "dataProvenance": "SIMULATED",
+  "availability": "NONE",
+  "projectionState": "INCOMPLETE",
+  "totalMatchingCount": "0",
+  "truncated": false,
+  "returnedKindCounts": {
+    "AIR_TEMPERATURE": 0,
+    "SOIL_MOISTURE": 0,
+    "INTERVAL_RAINFALL": 0
+  },
+  "conflictCount": 1,
+  "lastProcessedAt": "2026-01-02T00:00:01Z",
+  "latestSourceEventAt": "2026-01-01T12:00:01Z",
+  "observations": []
+}

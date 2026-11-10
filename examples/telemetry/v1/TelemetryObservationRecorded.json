@@ -1,0 +1,26 @@
+{
+  "eventId": "00000000-0000-4000-8000-000000000007",
+  "eventType": "TelemetryObservationRecorded",
+  "eventVersion": 1,
+  "timestamp": "2026-01-01T12:00:01Z",
+  "source": "agrosphere-telemetry-service",
+  "correlationId": "00000000-0000-4000-8000-000000000007",
+  "estateId": "00000000-0000-4000-8000-000000000005",
+  "blockId": "00000000-0000-4000-8000-000000000006",
+  "dataProvenance": "SIMULATED",
+  "aggregateId": "00000000-0000-4000-8000-000000000001",
+  "aggregateVersion": 1,
+  "payload": {
+    "schemaVersion": 1,
+    "observationId": "00000000-0000-4000-8000-000000000001",
+    "deviceId": "00000000-0000-4000-8000-000000000004",
+    "estateId": "00000000-0000-4000-8000-000000000005",
+    "blockId": "00000000-0000-4000-8000-000000000006",
+    "kind": "AIR_TEMPERATURE",
+    "unit": "CELSIUS",
+    "value": "27.5",
+    "observedAt": "2026-01-01T12:00:00Z",
+    "dataProvenance": "SIMULATED",
+    "receivedAt": "2026-01-01T12:00:01Z"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "release": "0.11.0",
+  "sourceManifestSha256": "43d9e5f7b328002c735cdf85da3f6ed5e0c9ff41a2f74aaccdcc0b8e8a396998",
+  "reviewSha256": "d2d54aebe7c13aac09b89006728f8a5c2b3df2c12bf5dfe437e1467dbc792c84",
+  "reviewer": "project owner",
+  "date": "2026-11-05",
+  "scope": "Local archive/promotion and independent Analytics API/four-input pins only; no runtime adapters/deployment",
+  "files": {
+    "examples/analytics/v1/calculated.json": "7c457ae47f1f5898108f0905a9cbb64c45b8214900260e505c731b932f5d64c9",
+    "examples/analytics/v1/corrected.json": "be943fa730b868d9fcc5b6a7acbbe44050aeded80b7f390c44a8b97fcdd6306a",
+    "examples/analytics/v1/denied.json": "307a40f97c14d7d7c519ed40deb97288636748c05b309ddf3deb9dcca2f54177",
+    "examples/analytics/v1/incomplete.json": "d7ea608107621c6c1ff13f99ee12d06c447cddd093d09d36ad2b5c72dcf92eed",
+    "examples/analytics/v1/none.json": "0da8c68a53d499e6ef744f423dd0740659bf5ff87e53f1fe14a27b36f1cd2278",
+    "examples/analytics/v1/pending.json": "3f209115914ffd3e6d053fca69bd10f00a68a189d27a2d42a197fbb9d7c1ec1d",
+    "examples/analytics/v1/unavailable.json": "09c10dbd16bb776df871673def90ade6c8b63ad09ac1f25607c02cda3af10bf0",
+    "examples/analytics/v1/voided.json": "2dec275ba21758fe8c5b10ddad6b7c3dfc0c7aed3c1a36380c0311a1e3124f18",
+    "examples/analytics/v1/zero-drc.json": "1cd9fb6af6107be49395a8efa8f786fe1df6fd34270fc163d9e261fb0145b318",
+    "openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300"
+  },
+  "inputSchemasSha256": {
+    "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+  },
+  "archive": {
+    "docs/analytics-poc/previous-0.10.0/VERSION": "dc24feb5bd35084d8ae32a4eafbec12352707d4662401fcbcc9bbd696cde77a9",
+    "docs/analytics-poc/previous-0.10.0/openapi/analytics-service.yaml": "2efa666c3e48c2fce9338645adb2ad6ef42be1154de49712f14d4360c3bc2514"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "estateId": "00000000-0000-4000-8000-000000000001",
+  "blockId": "00000000-0000-4000-8000-000000000002",
+  "from": "2026-01-01",
+  "to": "2026-01-01",
+  "generatedAt": "2026-01-01T12:00:03Z",
+  "dataProvenance": "SIMULATED",
+  "aggregationPolicy": "SUM_ROUNDED_COLLECTION_KG_V1",
+  "projectionState": "OBSERVED_ONLY",
+  "lastProcessedAt": null,
+  "latestSourceEventAt": null,
+  "missingSourceVersionCount": "0",
+  "conflictCount": 0,
+  "unsupportedCount": 0,
+  "sourceVersionSample": [],
+  "sourceVersionSampleTruncated": false,
+  "days": [
+    {
+      "date": "2026-01-01",
+      "availability": "NONE",
+      "metrics": null
+    }
+  ]
+}

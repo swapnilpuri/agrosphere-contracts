@@ -1,0 +1,42 @@
+{
+  "estateId": "00000000-0000-4000-8000-000000000001",
+  "blockId": "00000000-0000-4000-8000-000000000002",
+  "from": "2026-01-01",
+  "to": "2026-01-01",
+  "generatedAt": "2026-01-01T12:00:03Z",
+  "dataProvenance": "SIMULATED",
+  "aggregationPolicy": "SUM_ROUNDED_COLLECTION_KG_V1",
+  "projectionState": "OBSERVED_ONLY",
+  "lastProcessedAt": "2026-01-01T12:00:02Z",
+  "latestSourceEventAt": "2026-01-01T12:00:01Z",
+  "missingSourceVersionCount": "0",
+  "conflictCount": 0,
+  "unsupportedCount": 0,
+  "sourceVersionSample": [
+    {
+      "collectionId": "00000000-0000-4000-8000-000000000003",
+      "aggregateVersion": 1,
+      "sourceEventId": "00000000-0000-4000-8000-000000000004",
+      "sourceEventAt": "2026-01-01T12:00:01Z",
+      "collectionDate": "2026-01-01"
+    }
+  ],
+  "sourceVersionSampleTruncated": false,
+  "days": [
+    {
+      "date": "2026-01-01",
+      "availability": "OBSERVED",
+      "metrics": {
+        "activeCollectionCount": 1,
+        "pendingDrcCount": 0,
+        "calculatedCollectionCount": 1,
+        "voidedCollectionCount": 0,
+        "totalWetLatexKg": "10.000",
+        "pendingWetLatexKg": "0.000",
+        "calculatedWetLatexKg": "10.000",
+        "knownDryRubberKg": "0.000",
+        "isComplete": true
+      }
+    }
+  ]
+}

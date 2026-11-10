@@ -1,4 +1,5 @@
 """Offline AN-1 executable candidate, semantic and exact compatibility checks."""
+from telemetry_release_compatibility import prior_telemetry, telemetry_inventory
 import hashlib
 import json
 from datetime import datetime
@@ -55,17 +56,17 @@ def validate_value(name, value):
 def check_compatibility():
     baseline=load(BASE/'compatibility-baseline.json')
     promoted=(BASE/'RELEASE_0_8_0.json').exists()
-    require((ROOT/'VERSION').read_text().strip()==('0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if promoted else '0.7.0'),'Release version mismatch')
+    require((ROOT/'VERSION').read_text().strip()==('0.13.0' if (ROOT/'docs/m4/RELEASE_0_13_0.json').exists() else '0.12.0' if (ROOT/'docs/analytics-environment-poc/RELEASE_0_12_0.json').exists() else '0.11.0' if (ROOT/'docs/analytics-poc/RELEASE_0_11_0.json').exists() else '0.10.0' if (ROOT/'docs/telemetry-poc/RELEASE_0_10_0.json').exists() else '0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if promoted else '0.7.0'),'Release version mismatch')
     for f,h in baseline['files'].items():
         path=BASE/'previous-0.7.0'/f if promoted and f in ['VERSION','openapi/operations-service.yaml'] else ROOT/f
-        require(hashlib.sha256(path.read_bytes()).hexdigest()==h,'Released bytes changed: '+f)
+        require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest()==h,'Released bytes changed: '+f)
     release=load(BASE/'RELEASE_0_8_0.json') if promoted else {'files':{}}
     for f,h in release['files'].items():
         path=ROOT/'docs/alerts-privacy/previous-0.8.0'/f if f=='openapi/operations-service.yaml' and (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else ROOT/f
-        require(hashlib.sha256(path.read_bytes()).hexdigest()==h,'Accepted release changed: '+f)
+        require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest()==h,'Accepted release changed: '+f)
     inventory={p.relative_to(ROOT).as_posix() for d in ['events','examples','openapi'] for p in (ROOT/d).rglob('*') if p.is_file()}
     privacy=load(ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json') if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else {'files':{}}
-    require(inventory==(set(baseline['files'])-{'VERSION'})|set(release['files'])|set(privacy['files']),'Released inventory changed')
+    require(inventory==(set(baseline['files'])-{'VERSION'})|set(release['files'])|set(privacy['files'])|telemetry_inventory(),'Released inventory changed')
     old=load(BASE/'previous-0.7.0/openapi/operations-service.yaml' if promoted else ROOT/'openapi/operations-service.yaml');new=load(CANDIDATE/'openapi/operations-service.yaml')
     for p,v in old['paths'].items(): require(new['paths'].get(p)==v,'Existing path changed: '+p)
     for group,entries in old['components'].items():

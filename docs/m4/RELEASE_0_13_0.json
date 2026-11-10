@@ -1,0 +1,22 @@
+{
+  "release": "0.13.0",
+  "date": "2026-11-09",
+  "authority": "Owner M4 revision-1 approval delegates conforming local executable/release/pin engineering gate",
+  "manifestSha256": "a6b4d93666d8e2cdb83c826315edaabe2d48d73fe93ec147c76a8f26f1cd3914",
+  "engineeringReviewSha256": "44fbe9d82b7e2c09a5fcecb1276e63d7a238a30ddcf15a902fac695d0c6f6410",
+  "files": {
+    "openapi/ai-service.yaml": "14ef1d81d40eebb0e528dd0cea356545ff41c0cc0e881ed1b5e1f44c07e6631e",
+    "examples/ai/v1/flagged.json": "83369cda4e3a0730fe93a9e981f43404e42c2343d902f5f2cb1d384262b4f69e",
+    "examples/ai/v1/incomplete_source.json": "0785c63a596595c9fcbb863b9ec7b9f370e02cfb661f88d5ccbdd44ba5dce41e",
+    "examples/ai/v1/insufficient_history.json": "d78818ebcef486327446148beedd84849bf33456f0064c20b00c188bf98bea25",
+    "examples/ai/v1/no-label.json": "01169305213ac399125c0082cff0ef9b0a4ee5bd81497a71c682a840a828132d",
+    "examples/ai/v1/observed-zero.json": "3989ac35b17d3e05d6011eff7d623c0555390c17aa77256131ba2cf4e67437c2",
+    "examples/ai/v1/pending_drc.json": "d9bf972b38b78c207537c2e70b821bf116e3403e22a2546f68cb397992112a07",
+    "examples/ai/v1/threshold-equality.json": "ff7265bd7572d7d0879a12a94bf63b3fa63038b78d8427be779f9b76f2c716fb",
+    "examples/ai/v1/unscored-label.json": "e231dbe5f644588cc467adb96747b1e5905b5e9fe7b958e0c6a08ce0a342d530"
+  },
+  "archive": {
+    "docs/m4/previous-0.12.0/VERSION": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
+    "docs/m4/previous-0.12.0/openapi/ai-service.yaml": "0bc93aa4c50c05c2df65228304f203b7b2c4b738ae6de66fac9560c6e3f66dc9"
+  }
+}

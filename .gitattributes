@@ -35,3 +35,30 @@ docs/alerts-notifications/previous-0.7.0/** -text whitespace=cr-at-eol
 examples/operations/alerts/v1/** -text whitespace=cr-at-eol
 
 docs/alerts-privacy/previous-0.8.0/** -text whitespace=cr-at-eol
+
+# Exact isolated TLM-01 review bytes, independent of checkout newline settings.
+docs/telemetry-poc/candidate/** -text
+docs/telemetry-poc/CANDIDATE_MANIFEST.json -text
+
+# Owner-accepted exact TLM release and archived prior bytes.
+openapi/telemetry-service.yaml -text
+mqtt/** -text
+events/telemetry/** -text
+examples/telemetry/** -text
+docs/telemetry-poc/previous-0.9.0/** -text whitespace=cr-at-eol
+
+# Isolated ANL-01 candidate, not a released pin.
+docs/analytics-poc/candidate/** -text
+docs/analytics-poc/CANDIDATE_MANIFEST.json -text
+
+# Exact accepted ANL-01 release and prior placeholder archive.
+openapi/analytics-service.yaml -text
+examples/analytics/** -text
+docs/analytics-poc/previous-0.10.0/** -text
+
+# Exact isolated ANL-02 candidate bytes; no release/promotion implied.
+docs/analytics-environment-poc/candidate/** -text
+docs/analytics-environment-poc/CANDIDATE_MANIFEST.json -text
+
+# Owner-accepted 0.12.0 archive; preserve prior API/VERSION bytes exactly.
+docs/analytics-environment-poc/previous-0.11.0/** -text

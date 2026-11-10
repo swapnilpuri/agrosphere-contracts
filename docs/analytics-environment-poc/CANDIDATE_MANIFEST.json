@@ -1,0 +1,26 @@
+{
+  "status": "UNRELEASED_CANDIDATE",
+  "scope": "ANL-02",
+  "releaseVersion": null,
+  "inputsSha256": {
+    "events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+    "openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300",
+    "VERSION": "795d6bc79574d2aec03ad9cfec404bb95083c9dd210e6521e0d4199772d28d44"
+  },
+  "artifacts": {
+    "candidate/examples/air_temperature.json": "f928efca56925d51aeb2edcf66b2378b7d7b8d375133e06a40d96854c8c9a4f1",
+    "candidate/examples/conflict-outside-window.json": "ba7773ef015b78a8d46129558570096f2bdac19663870658907e7ee8cc29622a",
+    "candidate/examples/interval_rainfall.json": "a86dd108a29afee38093ee7aa540aed26545ebc8b3494923fb75cb373074f6b9",
+    "candidate/examples/mixed.json": "3e358e14e81e62a32215c08cf79d6cc25b1d67f63ab5b84b9b2672e874eefa5a",
+    "candidate/examples/none.json": "d114a2d32797441f3f71b007ca65a2289109fe9f9679d27cb19c44abd8f27344",
+    "candidate/examples/problem-400.json": "24f523e4bd0b2130782859ce2363e4a38ec2661a67562e42f45b2855f9fba082",
+    "candidate/examples/problem-401.json": "4ff6c4225f3f39a57b526a8f3debf7592da1ac587fa720bddb06b5775924d59b",
+    "candidate/examples/problem-403.json": "5cf5b79a010747f0d927dbba6897cab0bd5c12049b203331501cfff9cd1f8c78",
+    "candidate/examples/problem-404.json": "b32f67ce924b93cc49f894d519673a678c92a67882b7f67ad9832a7a2a2254dd",
+    "candidate/examples/problem-429.json": "7c23513aa00c35ed01ca4d42794f17479ed7af955204aca77370a32c253b8b54",
+    "candidate/examples/problem-503.json": "c892e8131ed1a473dc25113933e95b3cab349d9cf8f59f18d2011b97c3dbac93",
+    "candidate/examples/soil_moisture.json": "92f487e8c586f01e8fa450264231e464b0fa414bee3e07797031f818f8db796f",
+    "candidate/examples/truncated.json": "9ec3628d2686f260785477e0335e32c4229b5ac8e3203955b6922a7336aae19f",
+    "candidate/openapi/analytics-service.yaml": "7ab8ff23db5c81e3ba1ad537fdab6037f908bc815ca7c90a1d117d573a44e432"
+  }
+}

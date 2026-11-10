@@ -103,3 +103,15 @@ validate_alerts()
 
 from alert_privacy_contract_validation import run as validate_alert_privacy
 validate_alert_privacy()
+
+from telemetry_contract_validation import run as validate_telemetry
+validate_telemetry()
+
+from analytics_contract_validation import run as validate_analytics
+validate_analytics()
+
+from environmental_contract_validation import run as validate_environmental
+validate_environmental()
+
+from m4_release_compatibility import validate_release as validate_m4
+validate_m4()

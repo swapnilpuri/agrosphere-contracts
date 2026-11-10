@@ -1,0 +1,48 @@
+{
+  "scope": {
+    "estateId": "00000000-0000-0000-0000-000000000001",
+    "blockId": "00000000-0000-0000-0000-000000000002"
+  },
+  "datasetId": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "mode": "GENERATED_POINT_IN_TIME",
+  "asOf": "2026-08-08T00:00:00Z",
+  "targetDate": "2026-08-08",
+  "estateTimezone": "UTC",
+  "labelAsOf": "2026-08-09T00:00:00Z",
+  "targets": [
+    {
+      "target": "WET",
+      "modelId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comparatorModelId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "status": "INCOMPLETE_SOURCE",
+      "predictedKg": null,
+      "comparatorKg": null,
+      "sources": [],
+      "anomalyStatus": "UNSCORED",
+      "actualKg": "16.000",
+      "residualKg": null,
+      "thresholdKg": "5.000",
+      "labelStatus": "ELIGIBLE",
+      "labelSources": []
+    },
+    {
+      "target": "DRY",
+      "modelId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "comparatorModelId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "status": "INCOMPLETE_SOURCE",
+      "predictedKg": null,
+      "comparatorKg": null,
+      "sources": [],
+      "anomalyStatus": "UNSCORED",
+      "actualKg": "4.000",
+      "residualKg": null,
+      "thresholdKg": "1.000",
+      "labelStatus": "ELIGIBLE",
+      "labelSources": []
+    }
+  ],
+  "sourceDataProvenance": "SIMULATED",
+  "forecastProvenance": "PREDICTED",
+  "coverage": "OBSERVED_ONLY",
+  "uncertainty": "UNCALIBRATED"
+}

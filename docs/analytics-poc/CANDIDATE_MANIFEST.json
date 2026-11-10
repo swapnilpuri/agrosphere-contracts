@@ -1,0 +1,23 @@
+{
+  "status": "UNRELEASED_CANDIDATE",
+  "scope": "ANL-01",
+  "releaseVersion": null,
+  "inputSchemasSha256": {
+    "events/operations/v2/LatexCollectionRecorded.schema.json": "d0dab40a2c23f751b3241f8842b180ead38e15102b699b4701827b857b58e479",
+    "events/operations/v2/DrcMeasurementRecorded.schema.json": "8117eaeddafa695529c99274cff4cbeafa372664914d95b4d5f8c5b2f7c31709",
+    "events/operations/v2/LatexCollectionAdjusted.schema.json": "985f6d66815682f06ad6e743cea517dcc8e96c99dd91f72f0234c86d7fb32fe1",
+    "events/operations/v2/LatexCollectionVoided.schema.json": "a0b6270ca8d73d46bbd07225a84ecdf8d4a27e24fbaad42dbb0a41953041f989"
+  },
+  "artifacts": {
+    "candidate/examples/calculated.json": "7c457ae47f1f5898108f0905a9cbb64c45b8214900260e505c731b932f5d64c9",
+    "candidate/examples/corrected.json": "be943fa730b868d9fcc5b6a7acbbe44050aeded80b7f390c44a8b97fcdd6306a",
+    "candidate/examples/denied.json": "307a40f97c14d7d7c519ed40deb97288636748c05b309ddf3deb9dcca2f54177",
+    "candidate/examples/incomplete.json": "d7ea608107621c6c1ff13f99ee12d06c447cddd093d09d36ad2b5c72dcf92eed",
+    "candidate/examples/none.json": "0da8c68a53d499e6ef744f423dd0740659bf5ff87e53f1fe14a27b36f1cd2278",
+    "candidate/examples/pending.json": "3f209115914ffd3e6d053fca69bd10f00a68a189d27a2d42a197fbb9d7c1ec1d",
+    "candidate/examples/unavailable.json": "09c10dbd16bb776df871673def90ade6c8b63ad09ac1f25607c02cda3af10bf0",
+    "candidate/examples/voided.json": "2dec275ba21758fe8c5b10ddad6b7c3dfc0c7aed3c1a36380c0311a1e3124f18",
+    "candidate/examples/zero-drc.json": "1cd9fb6af6107be49395a8efa8f786fe1df6fd34270fc163d9e261fb0145b318",
+    "candidate/openapi/analytics-service.yaml": "f84ce861b7f6ed1b287ca3a5e8430061a568f9c22cac280d52fbb574117df300"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "UNRELEASED_CANDIDATE",
+  "scope": "TLM-01",
+  "releaseVersion": null,
+  "artifacts": {
+    "candidate/events/telemetry/v1/TelemetryObservationRecorded.schema.json": "43f652fbbe98c6be3e545307a0fc6c50b2ebce0834c986dfe87d5c3bc5a4a2d2",
+    "candidate/examples/AIR_TEMPERATURE.json": "8b7c9d69d0475845235f5ca4f7dbf0d87bcb5aeee241d019ef1484daa0fb8e99",
+    "candidate/examples/INTERVAL_RAINFALL.json": "c90a6dc7c6cece0b820c6aa3d27971848a4ebbcf8280ad13f877370334b2790e",
+    "candidate/examples/LatestReadings.json": "ec2a3af20fcea17c702b9a201d77633affc5ba80d54294179df7b96a96991ff6",
+    "candidate/examples/SOIL_MOISTURE.json": "8880bbd45b494b2d0eedbb19f65a651e674eeddb2f03fd2f7f5182feafd735a3",
+    "candidate/examples/TelemetryObservationRecorded.json": "bf30e8466dce6064ccc0d3fe00f6869fd534e399fd9fe3c74cd26f28106f97b9",
+    "candidate/mqtt/Observation.schema.json": "bf3a58d8e5929f367a95344fc7a34c4f548ad9c44fc833d7415dbe8e7b44b255",
+    "candidate/openapi/telemetry-service.yaml": "140ec8ce185dee4e62d5ef53309f06b3319d4be77d28d8078fd5cb9126c58ffa"
+  }
+}

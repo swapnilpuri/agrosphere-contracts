@@ -1,4 +1,5 @@
 """Offline II-1 candidate checks, independent of producer implementations."""
+from telemetry_release_compatibility import prior_telemetry, telemetry_inventory
 import hashlib
 import json
 from datetime import datetime
@@ -62,13 +63,13 @@ def check_compatibility():
     b = load(BASE/'compatibility-baseline.json')
     promoted = (BASE/'RELEASE_0_7_0.json').exists()
     if promoted:
-        require((ROOT/'VERSION').read_text().strip()==('0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else '0.7.0'),'Release version mismatch')
+        require((ROOT/'VERSION').read_text().strip()==('0.13.0' if (ROOT/'docs/m4/RELEASE_0_13_0.json').exists() else '0.12.0' if (ROOT/'docs/analytics-environment-poc/RELEASE_0_12_0.json').exists() else '0.11.0' if (ROOT/'docs/analytics-poc/RELEASE_0_11_0.json').exists() else '0.10.0' if (ROOT/'docs/telemetry-poc/RELEASE_0_10_0.json').exists() else '0.9.0' if (ROOT/'docs/alerts-privacy/RELEASE_0_9_0.json').exists() else '0.8.0' if (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else '0.7.0'),'Release version mismatch')
         for file, expected in load(BASE/'RELEASE_0_7_0.json')['files'].items():
             path=ROOT/'docs/alerts-notifications/previous-0.7.0'/file if file=='openapi/operations-service.yaml' and (ROOT/'docs/alerts-notifications/RELEASE_0_8_0.json').exists() else ROOT/file
-            require(hashlib.sha256(path.read_bytes()).hexdigest()==expected, 'Accepted 0.7.0 artifact changed: '+file)
+            require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest()==expected, 'Accepted 0.7.0 artifact changed: '+file)
     for file, expected in b['files'].items():
         path = BASE/'previous-0.6.0'/file if promoted and file in ['VERSION','openapi/operations-service.yaml'] else ROOT/file
-        require(hashlib.sha256(path.read_bytes()).hexdigest()==expected, 'Released bytes changed: '+file)
+        require(hashlib.sha256(prior_telemetry(path).read_bytes()).hexdigest()==expected, 'Released bytes changed: '+file)
     released = load(BASE/'previous-0.6.0/openapi/operations-service.yaml' if promoted else ROOT/'openapi/operations-service.yaml'); candidate = load(CANDIDATE/'openapi/operations-service.yaml')
     for path, value in released['paths'].items(): require(candidate['paths'].get(path)==value, 'Old path changed')
     for group, entries in released['components'].items():

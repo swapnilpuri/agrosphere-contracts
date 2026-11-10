@@ -1,3 +1,23 @@
+# ANL-02 local release — 2026-11-05
+
+Owner accepted the exact fourteen artifacts/three input fingerprints. Contracts **0.12.0** is locally promoted; [release record](docs/analytics-environment-poc/RELEASE_0_12_0.json) preserves the original candidate/review and prior 0.11.0 API/VERSION archive. Earlier pending labels are historical. Independent Analytics pins are updated; no remote publication or environmental runtime. Run the main validator, candidate `--check`, all contract tests and both `test_analytics_release.py` / `test_environmental_release.py`.
+
+# ANL-01 local release/pins — 2026-11-05
+
+ANL-01 exact executable acceptance is recorded in Architecture ANALYTICS_POC_CONTRACT_APPROVAL.md. Local 0.11.0 archive/promotion is complete; see docs/analytics-poc/RELEASE_0_11_0.json. Historical pending labels below are satisfied for these exact bytes only. No runtime or remote publication follows.
+
+# ANL-01 isolated preparation — 2026-11-05
+
+Owner-approved preparation supplies [the exact daily production-history candidate](docs/analytics-poc/CANDIDATE_REVIEW.md). Ten candidate artifacts plus four unchanged input-schema fingerprints await separate acceptance for local 0.11.0 release/Analytics pins; current VERSION/released artifacts remain unchanged. Run the main validator, `python scripts/build_analytics_contracts.py --check` and `python -m unittest discover -s scripts -p test_analytics_contracts.py -v` with the repository development interpreter. No running API, storage, queue, Gateway/Web adapter or deployment is delivered by this candidate.
+
+# TLM-01 local contract release/pins — 2026-11-01
+
+Owner accepted the exact TLM-01 eight-artifact candidate for local Contracts **0.10.0** release. See docs/telemetry-poc/RELEASE_0_10_0.json and Architecture MQTT_POC_CONTRACT_APPROVAL.md. Prior placeholder/VERSION archived; candidate/review bytes retained. Earlier pending labels below are historical. No remote publication or running implementation.
+
+# TLM-01 preparation — 2026-11-01
+
+The owner accepted the bounded TLM-01 domain package; docs/telemetry-poc/CANDIDATE_REVIEW.md describes the new isolated executable candidate and pending exact gate. Run scripts/build_telemetry_contracts.py --check and scripts/test_telemetry_contracts.py via unittest in addition to the main validator. No current release artifact/VERSION is changed.
+
 # agrosphere-contracts
 
 ## II-1 local release - 2026-10-31
@@ -75,3 +95,7 @@ The owner accepted the exact four AN-1 executable artifacts for local Contracts 
 ## Accepted privacy 0.9.0 local release — 2026-10-31
 
 Owner approval is recorded in Architecture ALERTS_PRIVACY_APPROVAL.md. See docs/alerts-privacy/RELEASE_0_9_0.json for exact promotion/pins and previous-0.8.0 for preserved bytes. Candidate/review pending labels are historical for this exact package. Existing validation now includes the privacy validator and all 59 contract tests; no remote release.
+
+## ANL-02 isolated preparation — 2026-11-05
+
+See [exact candidate review](docs/analytics-environment-poc/CANDIDATE_REVIEW.md). One additive environmental-history GET plus thirteen examples; current 0.11.0 release/pins unchanged. Run `python scripts/validate.py`, `python scripts/build_environmental_contracts.py --check`, `python -m unittest discover -s scripts -p "test_*contracts.py" -v` and retained `test_analytics_release.py`. No environmental runtime or release is delivered.
