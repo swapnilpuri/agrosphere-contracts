@@ -1,3 +1,7 @@
+# M4 local Contracts 0.13.0 — 2026-11-09
+
+The owner-approved delegated engineering gate promoted the exact [four-operation AI contract/eight examples](docs/m4/ENGINEERING_REVIEW.md); [local release](docs/m4/RELEASE_0_13_0.json) preserves prior placeholder/VERSION bytes and unchanged collection-v2 inputs. Independent AI/Web pins are verified. Historical 0.12.0 release/pending labels below remain evidence for their own scope; no remote publication occurred.
+
 # ANL-02 local release — 2026-11-05
 
 Owner accepted the exact fourteen artifacts/three input fingerprints. Contracts **0.12.0** is locally promoted; [release record](docs/analytics-environment-poc/RELEASE_0_12_0.json) preserves the original candidate/review and prior 0.11.0 API/VERSION archive. Earlier pending labels are historical. Independent Analytics pins are updated; no remote publication or environmental runtime. Run the main validator, candidate `--check`, all contract tests and both `test_analytics_release.py` / `test_environmental_release.py`.

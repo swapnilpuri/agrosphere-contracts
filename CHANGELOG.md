@@ -1,3 +1,7 @@
+## 0.13.0 — 2026-11-09 (local M4)
+
+Owner-approved delegated engineering gate promoted the four-operation bounded AI contract and eight examples, with exact prior AI placeholder/VERSION archive and unchanged collection-v2 inputs. Independent AI/Web pins use manifest/release hashes; historical compatibility validators retain old byte checks through archives. No remote publication. See docs/m4/ENGINEERING_REVIEW.md and RELEASE_0_13_0.json.
+
 # Changelog
 
 ## Unreleased — 2026-11-05 ANL-01 exact local release/pins
